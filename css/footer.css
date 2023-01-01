@@ -1,0 +1,248 @@
+/* footer */
+footer{
+    width: 100%; overflow: hidden; position:relative;
+}
+
+footer .visit{
+    width: 100%; height:150px; background: #ffd500;
+    position:relative;
+}
+footer .visit h2{
+    text-align: center; font-size: 48px; font-weight: 900;
+    padding-top:50px; box-sizing: border-box;
+}
+footer .visit a{
+    display: block; position:absolute; right:15%; top:35%; color:#fff;
+    font-size: 16px; background: #000; padding: 12px; border-radius: 40px;
+}
+footer .visit a:hover, footer .visit a:focus{
+    background: #fff; color:#000; box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
+footer .contact{
+    background: #000; position:relative;
+}
+footer .contact .inner{
+    width: 1760px; margin:0 auto; 
+    padding: 60px 0; 
+}
+footer .contact .inner .logo{
+    display: inline-block;
+    width: 193px; height: 42px;
+}
+footer .contact .inner .sns{
+    margin: 150px 0 200px 10px; width: 5%;
+}
+footer .contact .inner .sns li{
+    margin-bottom: 10px; padding: 25px; border-radius: 50%; 
+    position:relative; z-index: 1;
+}
+footer .contact .inner .sns li a:hover::after,footer .contact .inner .sns li a:focus::after{
+    position:absolute; content: ''; 
+    background: #FFD500; width: 60px; height: 60px;
+    left:15%; top:10%; z-index:-1; 
+    border-radius: 50%; transition:all 0.5s;
+}
+footer .contact .inner .sns li a{
+    display:block; width: 100%; height: 100%;
+}
+
+footer .contact .inner .sns li a:hover img:nth-child(1), footer .contact .inner .sns li a:focus img:nth-child(1){
+    opacity: 0;
+}
+footer .contact .inner .sns li a img:nth-child(2){
+    position:absolute; left:30%; opacity:0;
+}
+footer .contact .inner .sns li a:hover img:nth-child(2), footer .contact .inner .sns a:focus img:nth-child(2){
+    opacity:1;
+}
+footer .contact .inner .sns li:nth-child(2) a img:nth-child(2){
+    position:absolute; transform: translate(-3px,-14px);
+}
+footer .contact .inner .sns li:nth-child(3) a img:nth-child(2){
+    position:absolute; transform: translate(3px,3px);
+}
+footer .contact .inner .sns li:nth-child(3) a:hover img:nth-child(2), footer .contact .inner .sns li:nth-child(3):focus img:nth-child(2){
+    opacity:1;
+}
+footer .contact .inner .center{
+    position:absolute; left:40%; top: 40%; transform:translate(-50%, -50%);
+    color:#fff;
+}
+footer .contact .inner .center h3{
+    font-size:65px; margin-bottom: 20px;
+}
+footer .contact .inner .center p{
+    font-size: 18px; font-weight: 200;
+}
+footer .contact .inner .center .path{
+    position:absolute; right:-60%; top:30%;
+    width: 300px; height:200px; transform: scale(1.2);
+}
+footer .contact .inner .center .path .arrow path, footer .contact .inner .center .path .arrow line{
+    fill:none;  stroke: #fff; stroke-width: 1;
+}
+footer .contact .inner .center .e_mail{
+    position:absolute; right:-100%; top:5%;
+    transform: scale(1.3); 
+}
+footer .contact .inner .center .e_mail a{
+    display:block; width: 100%; height: 100%;
+}
+
+footer .contact .inner .center .e_mail p.cab{
+    font-size: 18px; font-weight: 600; color:#000;
+    background:  #ffea00; text-align: center; 
+    padding: 50px 20px; border-radius: 50%; opacity:1;transition:all 0.3s;
+    animation: blinkTxt 1s linear infinite;
+}
+/* e-mail 깜빡이기 */
+@keyframes blinkTxt {
+    0%{
+        color:#000;
+    }
+    50%{
+        color:transparent;
+    }
+    
+    100%{
+        color:#000;
+    }
+}
+footer .contact .inner .center .e_mail a:hover p.cab, footer .contact .inner .center .e_mail a:focus p.cab{
+    animation:static;
+}
+footer .contact .inner .center a.sans{
+    display: inline-block; background: #fff; color:#000; font-size: 18px; font-weight: 400;
+    text-align: center; border-radius: 40px; padding: 15px 30px; margin: 85px auto; box-sizing: border-box;
+}
+footer .contact .inner .center a.sans:hover, footer .contact .inner .center a.sans:focus{
+    background:  #ffea00; transition:all 0.3s; font-weight: 700;
+}
+footer .contact .inner .center a.sans:hover span, footer .contact .inner .center a.sans:focus span{
+    display: inline-block; animation: toRight 0.5s linear infinite;
+}
+@keyframes toRight {
+    100%{
+        transform:translateX(10px);
+    }
+    
+}
+
+footer .footerbottom{
+    position:absolute; left:0; bottom:-10%; z-index:2; color:#fff;
+    display: flex;
+}
+footer .footerbottom p.cab{
+    font-size: 18px; margin:150px 80px;
+}
+footer .contact_2{display: none;}
+
+/* responsive web */
+/* 1720px~1401px */
+@media screen and (max-width:1720px){
+    footer .visit{height: 130px;}
+    footer .visit h2{font-size: 40px;}
+    footer .visit a{font-size: 14px; padding: 10px;}
+    footer .contact .inner{max-width: 92%;}
+    footer .contact .inner .sns li:nth-child(1) a:hover img:nth-child(2){
+        transform: translate(2px,-28px);
+    }
+    footer .contact .inner .sns li:nth-child(3) a:hover img:nth-child(2){
+        transform: translate(3px,-25px);
+    }
+    footer .contact .inner .center h3{font-size:3rem;}
+    footer .contact .inner .center p{font-size:1rem;}
+    footer .contact .inner .center .path{width: 250px; height: 150px; right:-80%; 
+    top: 20%;}
+    footer .contact .inner .center .e_mail{ transform: scale(1.1); right: -140%; top:0;}
+    footer .contact .inner .center a.sans{font-size: 1rem;  padding: 10px 20px;}
+    
+    footer .footerbottom{bottom: -12%;}
+    footer .footerbottom img{width: 1200px;}
+    footer .footerbottom p{font-size: 1rem;}
+    footer .contact_2{display: none;}
+}
+
+/* 1400px~1024px */
+@media screen and (max-width: 1400px){
+    footer .visit a{right:11%;}
+    footer .contact .inner .logo{width: 150px; height: 35px;}
+    footer .contact .inner .logo img{width: 100%; height: 100%;}
+    footer .contact .inner .center{
+        left:40%; top: 45%; transform:translate(-50%, -50%);
+        color:#fff;
+    }
+    footer .contact .inner .center h3{font-size:2.5rem;}
+    footer .contact .inner .center p{font-size:0.95rem;}
+    footer .contact .inner .center .path{width: 200px; height: 100px; right:-80%; 
+        top: 20%;}
+    footer .contact .inner .center .e_mail{ transform: scale(1); right: -140%; top:0;}
+    
+    footer .footerbottom{bottom: -16%; left:-1%;}
+    footer .footerbottom img{width: 1000px; height: 300px;}
+    footer .footerbottom p{font-size: 0.7rem;}
+    footer .contact_2{display: none;}
+    
+}
+
+/* 1024이하 tablet  768까지*/
+@media screen and (max-width:1000px){
+    footer .visit{height: 120px;}
+    footer .visit h2{font-size: 2rem;}
+    footer .visit a{font-size: 14px; padding: 10px; transform: translate(70px,5px);}
+    footer .contact{display: none;}
+    footer .footerbottom{display: none;}
+
+    footer .contact_2{display: block; width: 100%; background: #000; height: 50vh; color:#fff;
+    position: relative;}
+    footer .contact_2 h2{font-size: 3.8rem; text-align: center;
+    padding-top: 180px; margin-bottom: 120px;}
+    footer .contact_2 h2 a:hover, footer .contact_2 h2 a:focus{color:#ffea00; transition: all 0.5s ease;}
+    footer .contact_2 .sns_list{width: 50%; position: absolute;
+        display: flex; justify-content: space-around; font-size: 0.8rem;
+        left: 20%; bottom: 5%; transform: scale(0.8);}
+    footer .contact_2 .sns_list li{ width: 8%; height: 8%;}
+    footer .contact_2 .sns_list li a{width: 100%; height: 100%; }
+    footer .contact_2 .sns_list li:nth-child(1) a img{width: 100%; height: 100%;}
+    footer .contact_2 .apply{font-size: 0.9rem; position: absolute;
+    top:6%; right: 5%; color:#fff;
+    }
+    footer .contact_2 .sns_list li a:hover img{transform: scale(1.2); transition: all 0.5s ease;}
+    footer .contact_2 .apply span{display: inline-block;margin-left: 10px;}
+    footer .contact_2 .apply:hover, footer .contact_2 .apply:focus{
+        color:#ffea00; transition: all 0.5s ease; font-style: italic;
+    }
+    footer .contact_2 .apply:hover span, footer .contact_2 .apply:focus span{
+        animation: toRight 0.5s linear infinite;
+    }
+    @keyframes toRight {
+        100%{
+            transform:translateX(10px);
+        }
+        
+    }
+    footer .contact_2 > p{position:absolute; bottom: 7%; right:5%; font-size:0.8rem;}
+}
+/* 모바일해상도 767px 이하 */
+@media screen and (max-width: 767px){
+    footer .visit{height: 100px;}
+    footer .visit h2{font-size: 1.5rem; transform: translateY(-10px);}
+    footer .visit a{display: none;}
+    
+    footer .contact_2{display: block; width: 100%; background: #000; height: 35vh; color:#fff;
+    position: relative;}
+    footer .contact_2 h2{font-size: 2rem; text-align: center;
+    padding-top: 120px; margin-bottom: 80px;}
+    footer .contact_2 h2 a:hover, footer .contact_2 h2 a:focus{color:#ffea00; transition: all 0.5s ease;}
+    footer .contact_2 .sns_list{ bottom: 10%;}
+    footer .contact_2 .sns_list li{ width: 8%; height: 8%;}
+    footer .contact_2 .sns_list li a{width: 100%; height: 100%; }
+    footer .contact_2 .sns_list li:nth-child(1) a img{width: 100%; height: 100%;}
+    footer .contact_2 .apply{font-size: 0.8rem; position: absolute;
+    top:10%; right: 5%; color:#fff;
+    }
+    footer .contact_2 .sns_list li a:hover img{transform: scale(1.2); transition: all 0.5s ease;}
+    footer .contact_2 > p{position:absolute; bottom: 10%; right:5%; font-size:0.8rem;}
+}

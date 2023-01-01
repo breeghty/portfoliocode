@@ -1,0 +1,368 @@
+@charset "utf-8";
+
+/* section. visual */
+.main{
+    width: 100%; overflow: hidden; background: #f7f7f7; height: 100vh;
+    margin-bottom:80px;
+}
+.main .inner{
+    width: 1660px; margin:20px auto 0;  margin-top: 280px;
+    position: relative;
+}
+.main .inner .titBox{
+    font-size: 180px; text-align: center;
+    width: 80%; line-height: 0.85; position: relative; z-index: 1; 
+    letter-spacing: 3px; margin-left: 80px;
+}
+.main .inner .titBox h2{
+    color:#ffd500; margin-left: 90px;
+}
+
+.main .inner .titBox h2 span.trn{
+    color:transparent; -webkit-text-stroke: 1px #000;
+    display: block; position:absolute; right:-1%; top: 50%;
+}
+.main .inner .titBox h2 span.dot{
+    color:#ffd500; display: block; position:absolute; 
+    right: -4%; bottom:-48%; font-size: 6vw;
+}
+.main .inner .txtBox{
+    position:absolute; left: 25%; bottom: -130%;
+}
+
+/* title font size 공통*/
+h2.bw{
+    font-size: 65px; font-weight: 400;
+}
+h3.serif{
+    font-size: 1rem; font-weight: 400;
+}
+section h2.tit{
+    font-size: 1.8vw; margin-bottom: 25px;
+}
+section h2.tit span{
+    font-size: 1vw; display: block;
+}
+section p{
+    font-size: 18px; font-weight: 300;
+}
+
+
+/* section.design */
+.design{
+    width: 100%; overflow: hidden; margin-bottom: 10vh;
+}
+.design .inner{
+    width: 1660px; margin:100px auto 0;
+}
+.design .inner .titBox{
+    text-align: center; margin-bottom: 10vh;
+}
+.design .inner .titBox h2{
+    margin-bottom: 15px;
+}
+
+/* design_01 */
+.design .inner .box{
+    margin-bottom: 15vh;
+}
+.design .inner .box.a, .design .inner .box.b {
+    display: flex; justify-content: space-around;
+    overflow: hidden;
+}
+.design .inner .box.a .imgBox, .design .inner .box.b .imgBox{
+    width: 550px; height: 550px;
+}
+.design .inner .box.a .textBox, .design .inner .box.b .textBox{
+    margin-top: 70px;
+}
+.design .inner .box .imgBox img{
+    width: 100%; height: 100%;
+}
+
+.design .inner .box.c h2.tit, .design .inner .box.d h2.tit, .design .inner .box.e h2.tit{
+    margin-left: 150px; margin-bottom: 8vh;
+}
+.design .inner .box.c .imgBox, .design .inner .box.e .imgBox{
+    width: 50vw; height: 600px; transform: translate(40%);
+}
+
+
+.design .inner .box.d .keyWord, .design .inner .box.d .concept{
+    margin:0 auto; width: 80%; margin-bottom: 5vh;
+}
+.design .inner h3.subtit{
+    font-size: 1.2vw; color:#FF4E00; margin-bottom: 5vh;
+}
+.design .inner .box.d .keyWord ul{
+    width: 80%; margin:0 auto; display: flex; flex-wrap:wrap;
+}
+.design .inner .box.d .keyWord ul li{
+    width: 20%; background: #FFD500; margin-bottom: 5vh;
+    text-align: center; border-radius: 40px; margin-right: 40px;
+    padding: 10px;
+}
+.design .inner .box.d .keyWord ul li:nth-child(4n){
+    margin-right: 3px;
+}
+.design .inner .box.d .concept ul{
+    display: flex; justify-content: center
+}
+.design .inner .box.d .concept ul li{
+    width: 30%; border-radius: 50%; text-align: center;
+    width: 300px; height: 300px; line-height: 300px;
+    border: 1.5px dashed #ffd500; font-size: 1.5vw; cursor: pointer;
+    position: relative;
+}
+
+.design .inner .box.d .concept ul li:nth-child(1){
+    transform: translateX(40px);
+}
+.design .inner .box.d .concept ul li:nth-child(1)::before{
+    position: absolute; background: #FFD500; content: ''; width: 0px; height: 300px;
+    border-radius: 50%; top:0; left:0%;
+}
+.design .inner .box.d .concept ul li:nth-child(1)::after{
+    transform: translateX(40px);
+    position:absolute; 
+    content:'포트폴리오의 역동적인 애니메이션과 \A 밝은 노란색을 통해 \A 지원자의 긍정적이고 적극적인 성격 강조 ';
+    font-size: 0.8vw; top:-5%; left:-25%; opacity: 0;
+    white-space: pre; line-height: 1.5; padding: 125px 40px;
+}
+.design .inner .box.d .concept ul li:nth-child(2)::before{
+    position: absolute; background:#000; content: ''; width:0px; height: 300px;
+    border-radius: 50%; top:0; left:0%;
+}
+.design .inner .box.d .concept ul li:nth-child(2)::after{
+    transform: translateX(40px);
+    position:absolute; 
+    content:'레이아웃 작성능력  \A 계획적, 차분한 분위기의 지원자 성격 \A 포트폴리오 내용의 충분함 \A 웹접근성, 웹표준 준수';
+    opacity: 0;
+    color:#fff;
+    font-size: 0.8vw; top:-5%; left:-19%;
+    white-space: pre; line-height: 1.5; padding: 125px 40px;
+}
+.design .inner .box.d .concept ul li:nth-child(3){
+    transform: translateX(-40px);
+}
+.design .inner .box.d .concept ul li:nth-child(3)::before{
+    position: absolute; background:#FFF; content: ''; width: 0px; height: 300px;
+    border-radius: 50%; top:0; left:0%;
+}
+.design .inner .box.d .concept ul li:nth-child(3)::after{
+    transform: translateX(40px);
+    position:absolute; 
+    content:'포트폴리오 프로세스의 투명성 \A 지원자의 정직함과 꼼꼼함을 드러냄 \A 웹디자인 트렌드인 깔끔함과 심플함 반영';
+    opacity: 0;
+    font-size: 0.8vw; top:-5%; left:-23%;
+    white-space: pre; line-height: 1.5; padding: 125px 40px;
+}
+
+
+.design .inner .box.e p{
+    width: 60%;margin-top: 3vh; margin-left: 390px;
+}
+
+
+/* hover 시 concept 보이게 하기 */
+.design .inner .box.d .concept ul li:hover:before,.design .inner .box.d .concept ul li:focus:before {
+    width: 300px; transition: background-color 0.5s ease-in-out; z-index: 2;
+}
+.design .inner .box.d .concept ul li:hover:after, .design .inner .box.d .concept ul li:focus::after{
+    opacity:1; transition: all 0.5s eas-in-out;z-index: 5;
+}
+
+/* section.prototype */
+.prototype{
+    width: 100%; overflow: hidden;
+}
+.prototype .inner{
+    width: 1660px; margin:100px auto 0;
+}
+.prototype .inner .titBox{
+    text-align: right; margin-bottom: 10vh;
+    margin-right: 70px;
+}
+
+.prototype .inner .titBox h2{
+    margin-bottom: 15px; 
+}
+.prototype .inner h2.tit.cab{
+    margin-left: 150px; margin-bottom: 3vh;
+}
+.prototype .inner .research a{
+    color:#fff; font-size: 0.8vw; background: #000;
+    display: inline-block; margin-left: 8vw; margin-bottom: 10vh;
+    padding: 5px 20px; border-radius: 40px; 
+}
+
+.prototype .inner .research .imgBox{
+    width: 80%; margin:0 auto; height:600px; 
+    display: flex; flex-flow:row wrap;
+    justify-content: space-around;
+}
+.prototype .inner .research .imgBox img{
+    width: 350px; height: 200px;
+}
+
+.prototype .inner .sketch .tit{
+    text-align: right; margin-right: 4vw;
+}
+.prototype .inner .sketch .container{
+    background: #ccc; width: 90%; margin: 0 auto;
+}
+
+.prototype .inner h3.subtit{
+    font-size: 1.2vw; color:#FF4E00; margin-bottom: 5vh;
+}
+.prototype .inner .style{
+    margin-bottom: 25vh;
+}
+.prototype .inner .color, .prototype .inner .font, .prototype .inner .logo{
+    width: 80%; margin: 0 auto;
+    margin-bottom: 10vh;
+}  
+.prototype .inner .color ul{
+    display: flex; justify-content: space-around; 
+}
+.prototype .inner .color ul li{
+    width: 250px; height: 100px; text-align: center;
+    line-height: 100px;
+}
+.prototype .inner .color ul li:nth-child(1){
+    background: #ffd500;box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
+}
+.prototype .inner .color ul li:nth-child(2){
+    background: #fff; box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
+}
+.prototype .inner .color ul li:nth-child(3){
+    background: #000; color:#fff;box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
+}
+
+.prototype .inner .font .textBox{
+    flex-direction: column;
+}
+.prototype .inner .font .textBox ul{
+    display: flex; justify-content: space-around; margin-bottom: 8vh;
+}
+.prototype .inner .font .textBox ul li{
+    width: 250px; height:100px; background: #fff; text-align: center;
+    line-height:100px; font-size: 1.5vw; position:relative;
+    cursor: pointer;
+}
+.prototype .inner .font .textBox ul li:after{
+    position:absolute; color:#FF4E00; opacity:0;
+}
+.prototype .inner .font .textBox ul li:hover::after{
+    opacity: 1; transition: all 0.3s ease;
+}
+.prototype .inner .font .textBox ul li.serif:after{
+    content:'각 섹션의 한글 소제목 '; font-size: 0.85vw;line-height: 1.5;
+    top:0; left:-30%; 
+}
+.prototype .inner .font .textBox ul li.sans:after{
+    content:'각 섹션의 한글 본문 '; font-size: 0.85vw;line-height: 1.5;
+    top:75%; right:-5%;
+}
+.prototype .inner .font .textBox ul li.cab{
+    font-weight: 700;
+}
+.prototype .inner .font .textBox ul li.cab:after{
+    content:'영문 소제목'; font-size: 0.85vw;line-height: 1.5;
+    top:75%; left:-5%;
+}
+.prototype .inner .font .textBox ul li.bw:after{
+    content:'각 섹션의 영문 대제목'; font-size: 0.85vw;line-height: 1.5;
+    top:75%; right:-20%; 
+}
+.prototype .inner .font .textBox ul li.bq:after{
+    content:'서브 페이지 메인 섹션 타이틀'; font-size: 0.85vw;line-height: 1.5;
+    top:75%; right:-30%; 
+}
+.prototype .inner .font .textBox ul li.num:after{
+    content:'인덱스 스킬 섹션 퍼센트 폰트'; font-size: 0.85vw;line-height: 1.5;
+    bottom:75%; left:-30%; 
+}
+.prototype .inner .font .textBox ul li.en:after{
+    content:'인덱스 영문 필기체 폰트'; font-size: 0.85vw;line-height: 1.5;
+    bottom:75%; right:-30%; 
+}
+.prototype .inner .font .textBox ul li:nth-child(2n-1){
+    transform: translateY(50px);
+}
+
+.prototype .inner .logo .textBox{
+    display: flex; justify-content: space-around;
+}
+.prototype .inner .logo .textBox p{
+    line-height: 1.7;
+}
+
+.prototype .inner .siteMap{
+    margin-bottom: 10vh;
+}
+.prototype .inner .siteMap .tit{
+    text-align: center;
+}
+.prototype .inner .siteMap .tit span{
+    transform: translateX(-50px);
+}
+.prototype .inner .siteMap .imgBox{
+    width: 50vw; height: 600px; margin-left: 400px;
+}
+.prototype .inner .siteMap .imgBox img{
+    width: 100%; height: 100%; 
+}
+
+.proto span.orange{
+    color:#FF4E00; display: inline-block; margin-left: 15px;
+}
+
+
+
+/* publishing */
+.publishing{
+    width: 100%; overflow:hidden; height: 900px;
+    background:url(../img/gif_ex.gif)no-repeat center/cover; 
+    background-attachment:fixed ;
+}
+.publishing .inner{
+    width: 1660px; margin:100px auto 0;
+}
+.publishing .inner .titBox{
+    text-align: center; margin-top: 300px;
+    line-height: 1.5; color:#fff;
+}
+.publishing .inner .titBox h2{
+    margin-bottom: 1vw;
+}
+.publishing .inner a{
+    color:#000; font-size: 0.85vw; background: #fff;
+    display: inline-block; margin-left: 7vw;
+    padding: 5px 20px; border-radius: 40px;  transform: translate(650px, 50px);
+}
+
+/* section result */
+.result{
+    width: 100%; overflow: hidden;
+    padding: 20vh 0; box-sizing: border-box;
+}
+.result .mockUp{
+    width: 100%; position:relative; height: 1200px;
+    margin-bottom: 20vh;
+}
+.result .mockUp h2{
+    font-size: 200px; color:transparent;-webkit-text-stroke: 1px #000;
+    transform: rotate(-90deg); position:absolute; top:50%; left:-3%;
+}
+.result .mockUp h2:nth-child(2){
+    transform: rotate(90deg); right:-70%; top: 120%; 
+}
+.result .mockUp .imgBox{
+    transform: translate(-50px); position:absolute; top:0; left:0;
+}
+
+.result .userTest, .result .presentation{
+    width: 80%; margin:0 auto; margin-bottom: 15vh;
+}
+

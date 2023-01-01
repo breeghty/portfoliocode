@@ -1,0 +1,145 @@
+.wrap{
+    width: 100%; overflow:hidden; background: #fff;
+}
+header{
+    position:fixed; height: 100px;
+    top:0; left: 4%; z-index:100;background: transparent;
+}
+header .innerHeader{
+    width: 1760px; background: none; padding: 35px 0;
+    box-sizing: border-box; margin: 0 auto;
+}
+header .innerHeader .logo{
+    width: 193px; height: 43px;
+}
+header .innerHeader .logo a{
+    display: block; width: 100%; height: 100%;
+}
+header .innerHeader .logo a img{
+    width: 100%;
+}
+header .innerHeader .menuBar .open{
+    position:absolute; right:0; top:50%; cursor: pointer;
+    background:none; width: 41px; height: 16px; border:none;
+}
+
+/* 클릭시 열리는 메뉴바 */
+.menuBar .menuOpen{
+    width: 100%; height: 100vh; position:fixed;
+    background: black; top:0; right:0; z-index:100;
+}
+.menuBar .menuOpen .gnb{
+    color:#fff; position:absolute; top:50%; left:40%; 
+    transform: translate(-50%, -50%); 
+}
+.menuBar .menuOpen .gnb li{
+    margin-bottom: 60px;
+}
+.menuBar .menuOpen .gnb li a{
+    display: inline-block; margin-right: 50px; font-size: 75px;
+    font-weight: 800; transition: all 0.3s;
+}
+.menuBar .menuOpen .gnb li span{
+    display:inline-block; font-size: 18px; color:#787878;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.menuBar .menuOpen .gnb li a:hover, .menuBar .menuOpen .gnb li a:focus{
+    -webkit-text-stroke: 1px #fff; color:#000; transition: all 0.3s;
+}
+.menuBar .menuOpen .close{
+    display: block; position:absolute; top: 10%;right:10%;
+}
+
+/* menu 열고 닫기 */
+.menuBar .menuOpen{
+    width:0; overflow:hidden; transition:all 0.5s; opacity:0;
+}
+.menuBar .menuOpen.on{
+    width: 100%; right:0; opacity:1; transition: all 0.5s;
+}
+
+/* nav */
+nav{
+    position:fixed; bottom:5%; left:3%; z-index:100;
+    transition: all 0.3s ease;
+}
+nav li{
+    margin-bottom: 5px;
+}
+nav li a{
+    display: block; font-size:18px; color:#787878; width: 100%; height: 100%;
+}
+nav li a:hover, nav li a:focus, nav li:active{
+    color:#000;  font-weight: bold;
+}
+
+/* responsive web */
+/* 1720px~1401px */
+@media screen and (max-width:1720px){
+    header{width: 100%; height: 80px; transition: all 0.4s ease;}
+    header .innerHeader{max-width: 100%;}
+    header .innerHeader .menuBar .open{right: 8%;}
+    /* menu .open .gnb */
+    .menuBar .menuOpen .gnb li a{font-size: 4rem;}
+    .menuBar .menuOpen .gnb li span{font-size: 1rem;}
+    /* nav */
+    nav li a{font-size: 1rem;}
+}
+/* 1400px~1024px */
+@media screen and (max-width: 1400px){
+    header{height: 60px; transition: all 0.4s ease;
+    left: 2%;}
+    header .innerHeader{max-width: 100%;}
+    header .innerHeader .logo{width: 150px; height: 45px; transform: translateX(20px);}
+    header .innerHeader .logo img{width: 100%;}
+    header .innerHeader .menuBar .open{right: 6%; width: 36px; height: 15px;}
+    header .innerHeader .menuBar .open img{width: 100%;}
+    .menuBar .menuOpen .gnb li span{font-size: 0.85rem;}
+    nav li a{font-size: 0.96rem;}
+}
+
+/* 1024이하 tablet  768까지*/
+@media screen and (max-width:1000px){
+    header{width: 100%; height: 60px; transition: all 0.4s ease;
+        left: 0%;}
+    header .innerHeader{max-width: 95%;}
+    header .innerHeader .logo{width: 150px; height: 45px; transform: translate(20px,-15px);}
+    header .innerHeader .menuBar .open{
+        right:5%; top:40%; cursor: pointer;
+        background:none; width: 40px; height: 15px; border:none;
+    }
+    .menuBar .menuOpen .gnb{
+        color:#fff; position:absolute; top:50%; left:50%; 
+        transform: translate(-50%, -50%); 
+    }
+    .menuBar .menuOpen .gnb li{text-align: center;}
+    .menuBar .menuOpen .gnb li a{font-size: 3.2rem;}
+    .menuBar .menuOpen .gnb li span{display: none;}
+    /* menu 열고 닫기 */
+    .menuBar .menuOpen{
+    width:0; overflow:hidden; transition:all 0.3s ease; opacity:0;
+    }
+    .menuBar .menuOpen.on{
+    width: 100%; right:0; opacity:1; transition: all 0.3s ease;
+    }
+    
+    nav li a{font-size: 0.5rem;}
+}
+
+/* 모바일해상도 767px 이하 */
+@media screen and (max-width: 767px){
+    header{height: 60px; transition: all 0.4s ease;
+        left: 2%;}
+    header .innerHeader{max-width: 100%; height: 100%;}
+    header .innerHeader .logo{width: 100px; height: 35px; transform: translate(20px,-10px);}
+    header .innerHeader .menuBar .open{
+        right:8%; top:47%; cursor: pointer;
+        background:none; width: 30px; height: 10px; border:none;
+    }
+    .menuBar .menuOpen .close{
+        display: block; position:absolute; top: 5%;right:7%; width: 50px; height: 50px;
+    }
+    .menuBar .menuOpen .close img{width: 100%; height: 100%;}
+    .menuBar .menuOpen .gnb li{text-align: center;}
+    .menuBar .menuOpen .gnb li a{font-size: 1.8rem;}
+}

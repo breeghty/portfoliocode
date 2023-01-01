@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>퍼블리셔 조소영의 작업을 모아 둔 페이지입니다.Soyoung's portfolio - Project Gallery</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+
+
+    <script>
+        // menu open
+        $(function(){
+            $(".menuBar button.open").on("click", function(){
+            $(".menuBar .menuOpen").addClass('on');
+        });
+            $(".menuBar .menuOpen .close").on("click", function(){
+            $(".menuBar .menuOpen").removeClass('on');
+        });
+        });
+    </script>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <div class="innerHeader">
+                <h1 class="logo">
+                    <a href="index.html">
+                        <img src="img/logo_1.png" alt="로고입니다. 클릭시 홈으로">
+                    </a>
+                </h1>
+                <div class="menuBar">
+                    <button class="open" type="button">
+                        <img src="img/menu.png" alt="메뉴오픈">
+                    </button>
+                    <div class="menuOpen">
+                        <a href="#" class="close"><img src="img/close.png" alt="닫기버튼"></a>
+                        <ul class="gnb cab">
+                            <li><a href="index.html">Home</a><span>홈으로 가기</span></li>
+                            <li><a href="about.html">About</a><span>저를 소개하는 페이지입니다.</span></li>
+                            <li><a href="gallery.html">Project Gallery</a><span>저의 작업물들을 모아둔 페이지입니다.</span></li>
+                            <li><a href="portfolio.html">Portfolio Process</a><span>포트폴리오를 만드는 과정을 담았습니다.</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- fixnav -->
+        <nav class="cab">
+            <li><a href="#publishing">Publishing</a></li>
+            <li><a href="#ncs">NCS</a></li>
+            <li><a href="#study">Study</a></li>
+        </nav>
+        <!-- section visual -->
+        <section class="main" id="main">
+            <div class="inner">
+                <div class="titBox bq">
+                    <h2>Project <span>Gallery</span></h2>
+                </div>
+                <div class="txtBox sans">
+                    웹사이트 리뉴얼 작업부터<br class="mo">
+                    클론코딩한 사이트들의 상세 내용을 <br class="mo">
+                    확인하실 수 있습니다. <br class="mo">
+                    제가 개인적으로 공부하고 기록한 내용도 <br class="mo">
+                    담겨 있습니다. <br class="mo">
+                </div>
+            </div>
+            
+        </section>
+        <!-- 흐르는 텍스트 -->
+        <div class="text_flow_container">
+            <div class="text_flow_wrap">
+                <h2 class="cab">MY WORKS AND STUDY LOG TO GROW MY SKILLS!</h2>
+                <h2 class="cab">MY WORKS AND STUDY LOG TO GROW MY SKILLS!</h2>
+                <h2 class="cab">MY WORKS AND STUDY LOG TO GROW MY SKILLS!</h2>
+                <h2 class="cab">MY WORKS AND STUDY LOG TO GROW MY SKILLS!</h2>
+                <h2 class="cab">MY WORKS AND STUDY LOG TO GROW MY SKILLS!</h2>
+            </div>
+        </div>
+        <section class="publishing" id="publishing">
+            <div class="inner">
+                <div class="leftTit">
+                    <h2 class="bw">Publishing</h2>
+                </div>
+                <div class="swiper mySwiper_1" data-color="#fff">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide gal1">
+                            <div class="imgBox">
+                                <a href="#"><img src="img/crewalamode.png" alt="크루얼라모드"></a>
+                            </div>
+                            <div class="textBox">
+                                <h2 class="cab sTxt">CLONE CODING</h2>
+                                <h2 class="cab bTxt">CrewALaMode</h2>
+                                <div class="details">
+                                    <p class="sans">
+                                        크루즈 승무원들의 의류와 라이프스타일을 <br class="mo">
+                                        책임지는 기업, 크루얼라모드의 클론코딩 작업입니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide gal2">
+                            <div class="imgBox">
+                                <a href="#"><img src="img/daebang.png" alt="대방건설"></a>
+                            </div>
+                            <div class="textBox">
+                                <h2 class="cab sTxt">CLONE CODING</h2>
+                                <h2 class="cab bTxt">Daebang</h2>
+                                <div class="details">
+                                    <p class="sans">
+                                        1991년에 설립된 대한민국의 건설업체 <br class="mo">
+                                        대방건설 웹사이트의 클론코딩 작업입니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide gal3">
+                            <div class="imgBox">
+                                <a href="#"><img src="img/musign.png" alt="뮤자인"></a>
+                            </div>
+                            <div class="textBox">
+                                <h2 class="cab sTxt">CLONE CODING</h2>
+                                <h2 class="cab bTxt">MUSIGN</h2>
+                                <div class="details">
+                                    <p class="sans">
+                                        디지털 아티스트 컴퍼니<br class="mo">
+                                        뮤자인 웹사이트의 클론코딩 작업입니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide gal4">
+                            <div class="imgBox">
+                                <a href="#"><img src="img/ystudio.png" alt="와이스튜디오"></a>
+                            </div>
+                            <div class="textBox">
+                                <h2 class="cab sTxt">CLONE CODING</h2>
+                                <h2 class="cab bTxt">Y Studio</h2>
+                                <div class="details">
+                                    <p class="sans">
+                                        모바일 앱 및 웹사이트 구축까지 <br class="mo">
+                                        고객의 디지털 서비스를 제작하는 <br class="mo">
+                                        디지털 에이전시 와이스튜디오의 클론코딩 작업입니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide gal5">
+                            <div class="imgBox">
+                                <a href="#"><img src="img/phomein.png" alt="포메인"></a>
+                            </div>
+                            <div class="textBox">
+                                <h2 class="cab sTxt">CLONE CODING</h2>
+                                <h2 class="cab bTxt">Phomein</h2>
+                                <div class="details">
+                                    <p class="sans">
+                                        대한민국 대표 쌀국수 브랜드 <br class="mo">
+                                        포메인 웹사이트의 클론코딩 작업입니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide gal6">
+                            <div class="imgBox">
+                                <a href="#"><img src="img/dopda.png" alt="돕다"></a>
+                            </div>
+                            <div class="textBox">
+                                <h2 class="cab sTxt">CLONE CODING</h2>
+                                <h2 class="cab bTxt">DOPDA</h2>
+                                <div class="details">
+                                    <p class="sans">
+                                        글로벌 컨설팅 그룹 <br class="mo">
+                                        돕다(DOPDA) 웹사이트의 클론코딩 작업입니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide gal7">
+                            <div class="imgBox">
+                                <a href="#"><img src="img/doctors.png" alt="가로수길 닥터스 피부과"></a>
+                            </div>
+                            <div class="textBox">
+                                <h2 class="cab sTxt">CLONE CODING</h2>
+                                <h2 class="cab bTxt">Doctors</h2>
+                                <div class="details">
+                                    <p class="sans">
+                                        프리미엄 안티에이징 시술과 <br class="mo">
+                                        프라이빗 의료서비스를 제공하는 <br class="mo">
+                                        가로수길 닥터스 피부과 사이트의 클론코딩 작업입니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide gal8">
+                            <div class="imgBox">
+                                <a href="#"><img src="img/innere.png" alt="이너르"></a>
+                            </div>
+                            <div class="textBox">
+                                <h2 class="cab sTxt">CLONE CODING</h2>
+                                <h2 class="cab bTxt">INNERE</h2>
+                                <div class="details">
+                                    <p class="sans">
+                                        건강을 위한 천연발효 영양음료 제조 기업 <br class="mo">
+                                        이너르 사이트의 클론코딩 작업입니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide gal9">
+                            <div class="imgBox">
+                                <a href="#"><img src="img/hanhwa.png" alt="한화케미칼"></a>
+                            </div>
+                            <div class="textBox">
+                                <h2 class="cab sTxt">CLONE CODING</h2>
+                                <h2 class="cab bTxt">Hanwha</h2>
+                                <div class="details">
+                                    <p class="sans">
+                                        현재 한화솔루션으로 통합된 <br class="mo">
+                                        대한민국 대표 석유화학 기업 <br class="mo">
+                                        한화케미칼 사이트의 클론코딩 작업입니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide gal10">
+                            <div class="imgBox">
+                                <a href="#"><img src="img/ajou.png" alt="아주대병원"></a>
+                            </div>
+                            <div class="textBox">
+                                <h2 class="cab sTxt">WEB RENEWAL</h2>
+                                <h2 class="cab bTxt">AJou Hospital</h2>
+                                <div class="details">
+                                    <p class="sans">
+                                        국내 상급종합병원 아주대학교 병원의 <br class="mo">
+                                        사이트를 직접 리뉴얼한 작업물입니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide gal11">
+                            <div class="imgBox">
+                                <a href="#"><img src="img/woosung.png" alt="우성사료"></a>
+                            </div>
+                            <div class="textBox">
+                                <h2 class="cab sTxt">CLONE CODING</h2>
+                                <h2 class="cab bTxt">WOOSUNG</h2>
+                                <div class="details">
+                                    <p class="sans">
+                                        대한민국 사료기업 우성사료의 <br class="mo">
+                                        클론코딩 작업물입니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+        <section class="ncsProcess" id="ncs">
+            <div class="inner">
+                <div class="leftTit">
+                    <h2 class="bw">NCS Process</h2>
+                </div>
+                <div class="swiper mySwiper_2" data-color="#000">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide box1">
+                            <div class="imgBox">
+                                <a href="#"><img src="img/ncs_1.jpg" alt="ui 구현"></a>
+                            </div>
+                            <div class="textBox">
+                                <p class="sans">
+                                    아주대병원 사이트 리뉴얼 과정을 담았습니다. <br class="mo">
+                                    기획, 조사, 아이디어 스케치와 프로토타입 제작 <br class="mo">
+                                    과정이 담겨 있습니다.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide box2">
+                            <div class="imgBox">
+                                <a href="#"><img src="img/ncs_2.png" alt="UI 테스트"></a>
+                            </div>
+                            <div class="textBox">
+                                <p class="sans">
+                                    아주대병원 사이트를 리뉴얼 한 후 <br class="mo">
+                                    사용성 테스트를 실시한 뒤 사이트의 개선계획을 <br class="mo">
+                                    수립했습니다.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide box3">
+                            <div class="imgBox">
+                                <a href="#"><img src="img/ncs_3.png" alt="개발자 환경 구축"></a>
+                            </div>
+                            <div class="textBox">
+                                <p class="sans">
+                                    아주대병원 사이트 리뉴얼 과정을 담았습니다. <br class="mo">
+                                    기획, 조사, 아이디어 스케치와 프로토타입 제작 <br class="mo">
+                                    과정이 담겨 있습니다.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide box4">
+                            <div class="imgBox">
+                                <a href="#"><img src="img/ncs_4.png" alt="프로그래밍 언어 활용"></a>
+                            </div>
+                            <div class="textBox">
+                                <p class="sans">
+                                    아주대병원 사이트 리뉴얼 과정을 담았습니다. <br class="mo">
+                                    기획, 조사, 아이디어 스케치와 프로토타입 제작 <br class="mo">
+                                    과정이 담겨 있습니다.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide box5">
+                            <div class="imgBox">
+                                <a href="#"><img src="img/ncs_5.png" alt="UI/UX 요구 분석"></a>
+                            </div>
+                            <div class="textBox">
+                                <p class="sans">
+                                    아주대병원 사이트 리뉴얼 과정을 담았습니다. <br class="mo">
+                                    기획, 조사, 아이디어 스케치와 프로토타입 제작 <br class="mo">
+                                    과정이 담겨 있습니다.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide box6">
+                            <div class="imgBox">
+                                <a href="#"><img src="img/ncs_6.png" alt="UI/UX 콘셉트 기획"></a>
+                            </div>
+                            <div class="textBox">
+                                <p class="sans">
+                                    아주대병원 사이트 리뉴얼 과정을 담았습니다. <br class="mo">
+                                    기획, 조사, 아이디어 스케치와 프로토타입 제작 <br class="mo">
+                                    과정이 담겨 있습니다.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide box7">
+                            <div class="imgBox">
+                                <a href="#"><img src="img/ncs_7.png" alt="UI 아키텍처 설계"></a>
+                            </div>
+                            <div class="textBox">
+                                <p class="sans">
+                                    아주대병원 사이트 리뉴얼 과정을 담았습니다. <br class="mo">
+                                    기획, 조사, 아이디어 스케치와 프로토타입 제작 <br class="mo">
+                                    과정이 담겨 있습니다.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide box8">
+                            <div class="imgBox">
+                                <a href="#"><img src="img/ncs_8.png" alt="애플리케이션 테스트 수행"></a>
+                            </div>
+                            <div class="textBox">
+                                <p class="sans">
+                                    아주대병원 사이트 리뉴얼 과정을 담았습니다. <br class="mo">
+                                    기획, 조사, 아이디어 스케치와 프로토타입 제작 <br class="mo">
+                                    과정이 담겨 있습니다.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide box9">
+                            <div class="imgBox">
+                                <a href="#"><img src="img/ncs_9.png" alt="애플리케이션 배포"></a>
+                            </div>
+                            <div class="textBox">
+                                <p class="sans">
+                                    아주대병원 사이트 리뉴얼 과정을 담았습니다. <br class="mo">
+                                    기획, 조사, 아이디어 스케치와 프로토타입 제작 <br class="mo">
+                                    과정이 담겨 있습니다.
+                                </p>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+        <section class="study" id="study">
+            <div class="scroll_container">
+                <div class="scrollTxt bq">Daily</div>
+                <div class="scrollTxt bq">Study</div>
+            </div>
+            <div class="inner">
+                <ul class="log sans">
+                    <li>
+                        <a href="#">
+                            <h3 class="tit">Splitting.js를 이용한 텍스트 효과</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h3 class="tit">javascript 함수 표현식</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h3 class="tit">swiper plugin 사용방법</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h3 class="tit">자주 사용하는 jQuery 메소드</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h3 class="tit">CSS 레이아웃: Flex와 Grid</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h3 class="tit">javascript DOM</h3>
+                        </a>
+                    </li>
+                </ul>
+                <a class="cab" href="#">MORE →</a>
+            </div>
+        </section>
+        <footer id="contact">
+            <div class="visit">
+                <h2 class="cab">
+                    THANK YOU FOR YOUR VISIT!
+                </h2>
+                <a href="#" class="cab">
+                    Portfolio Process →
+                    <!-- <img src="img/portfolio.png" alt="포트폴리오 프로세스 바로가기"> -->
+                </a>
+            </div>
+            <div class="contact">
+                <div class="inner">
+                    <h1 class="logo">
+                        <img src="img/logo_2.png" alt="soyoung 로고">
+                    </h1>
+                    <ul class="sns">
+                        <li>
+                            <a href="#">
+                                <img src="img/blog.png" alt="블로그 바로가기">
+                                <img src="img/blog_hover.png" alt="블로그 바로가기">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/gitsns.png" alt="깃허브 바로가기">
+                                <img src="img/gitsns_hover.png" alt="깃허브 바로가기">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/tistory.png" alt="티스토리 바로가기">
+                                <img src="img/tistory_hover.png" alt="티스토리 바로가기">
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="center">
+                        <h3 class="cab">Let's get in touch!</h3>
+                        <p class="sans">함께 나누고 싶은 이야기가 있으시다면!</p>
+                        <div class="path">
+                            <svg class="arrow" version="1.1" id="레이어_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                                y="0px" viewBox="0 0 291 132" style="enable-background:new 0 0 291 132;" xml:space="preserve">
+                                <path class="st0" d="M20.1,68.53c0,0,34.98,15.38,58.96,12.1c0,0,83.47-2.99,80.85-50.56c0,0-7.91-19.08-47.08-7.55
+                                    c0,0-34.24,7.64-40.75,35.85c0,0-5.24,35.63,42.13,46.53c0,0,38.81,12.22,98.22,9.18c0,0,45.34-2.39,64.85-8.53l-16.24-7.94"/>
+                                <line class="st0" x1="277.28" y1="105.54" x2="272.6" y2="122.28"/>
+                            </svg>
+                        </div>
+                        <div class="e_mail">
+                            <a href="#">
+                                <!-- <img src="img/touch.png" alt="마우스를 올려놓을 시 이메일이 표시됩니다."> -->
+                                <p class="cab">whthdud4356 <br>@naver.com</p>
+                            </a>
+                        </div>
+                        <a href="#" class="sans">
+                            이력서 열람하기 <span>→</span>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="footerbottom">
+                <img class="contactImg" src="img/contact.png" alt="contact">
+                <p class="cab">ⓒ 2022 SOYOUNG</p>
+            </div>
+            <!-- tablet, mobile -->
+            <div class="contact_2">
+                <h2 class="e_mail_2 cab">
+                    <a href="#">whthdud4356@naver.com</a>
+                </h2>
+                <ul class="sns_list">
+                    <li>
+                        <a href="#">
+                            <img src="img/blog.png" alt="네이버 블로그 바로가기">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/gitsns.png" alt="깃허브 바로가기">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/tistory.png" alt="티스토리 바로가기">
+                        </a>
+                    </li>
+                </ul>
+                <a href="#" class="apply sans">이력서 열람하기<span>→</span></a>
+                <p class="cab">ⓒ 2022 SOYOUNG</p>
+            </div>
+        </footer>
+    </div>
+    
+</body>
+
+<script>
+    //swiper publishing gallery
+    var swiper = new Swiper(".mySwiper_1", {
+        slidesPerView: 1,
+        autoplay: {
+            delay: 6500,
+            disableOnInteraction: false,//스와이프 후 자동재생.
+        },
+        loop:true,
+        spaceBetween: 50,
+        centeredSlides: true,
+        pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+        formatFractionCurrent: function(number) {return('0' + number).slice(-2)}, //페이지넘버에 0붙이고싶을때!(두자릿수로 할때)
+        formatFractionTotal: function(number) {return('0' + number).slice(-2)} //한자리수를 원할 경우 적지않는다.
+        },
+        breakpoints:{
+            //1720px보다 클 경우
+            1720:{
+                slidesPerView: 3,
+                spaceBetween: 150,
+            },
+            767:{
+                slidesPerView: 3,
+                spaceBetween: 50,
+            }
+        }
+    });
+    // ncs gallery
+    var swiper = new Swiper(".mySwiper_2", {
+        slidesPerView: 1,
+        spaceBetween:50,
+        autoplay: {
+            delay: 6500,
+            disableOnInteraction: false, //스와이프 후 자동재생
+        },
+        loop:true,
+        centeredSlides: true,
+        pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+        formatFractionCurrent: function(number) {return('0' + number).slice(-2)}, //페이지넘버에 0붙이고싶을때!(두자릿수로 할때)
+        formatFractionTotal: function(number) {return('0' + number).slice(-2)} //한자리수를 원할 경우 적지않는다.
+        },
+        breakpoints:{
+            //1720px보다 클 경우
+            1720:{
+                slidesPerView: 3,
+                spaceBetween: 150,
+            },
+            767:{
+                slidesPerView: 3,
+                spaceBetween: 50,
+            }
+        }
+    });
+</script>
+</html>

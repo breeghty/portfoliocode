@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>퍼블리셔 조소영의 포트폴리오 제작과정을 담은 페이지입니다. Soyoung's portfolio - Portfolio Process</title>
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/font.css">
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+        // menu open
+        $(function(){
+            $(".menuBar button.open").on("click", function(){
+            $(".menuBar .menuOpen").addClass('on');
+        });
+            $(".menuBar .menuOpen .close").on("click", function(){
+            $(".menuBar .menuOpen").removeClass('on');
+        });
+        });
+    </script>
+</head>
+<body>
+    <div class="wrap">
+        <!-- header -->
+        <header>
+            <div class="innerHeader">
+                <h1 class="logo">
+                    <a href="index.html">
+                        <img src="img/logo_1.png" alt="로고입니다. 클릭시 홈으로">
+                    </a>
+                </h1>
+                <div class="menuBar">
+                    <button class="open" type="button">
+                        <img src="img/menu.png" alt="메뉴오픈">
+                    </button>
+                    <div class="menuOpen">
+                        <a href="#" class="close"><img src="img/close.png" alt="닫기버튼"></a>
+                        <ul class="gnb cab">
+                            <li><a href="index.html">Home</a><span>홈으로 가기</span></li>
+                            <li><a href="about.html">About</a><span>저를 소개하는 페이지입니다.</span></li>
+                            <li><a href="gallery.html">Project Gallery</a><span>저의 작업물들을 모아둔 페이지입니다.</span></li>
+                            <li><a href="portfolio.html">Portfolio Process</a><span>포트폴리오를 만드는 과정을 담았습니다.</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- fixnav -->
+        <nav class="cab">
+            <li><a href="#design">Designing</a></li>
+            <li><a href="#prototype">Prototyping</a></li>
+            <li><a href="#publishing">Publishing</a></li>
+            <li><a href="#result">Result</a></li>
+        </nav>
+        <!-- section.main -->
+        <section class="main" id="main">
+            <div class="inner">
+                <div class="titBox bq">
+                    <h2>Portfolio<span class="trn">process</span><span class="dot">.</span></h2>
+                </div>
+                <div class="txtBox sans">
+                    지금 보고 계시는 포트폴리오의 <br class="mo">
+                    제작과정을 보여드립니다. <br class="mo">
+                    마인드맵 작성부터 시안 제작, 퍼블리싱 작업 <br class="mo">
+                    모두 제 손을 거쳐 만들어졌습니다.
+                </div>
+            </div>
+        </section>
+        <!-- design -->
+        <section class="design" id="design">
+            <div class="inner">
+                <div class="titBox">
+                    <h2 class="bw">Design Process</h2>
+                    <h3 class="serif">포트폴리오 내용과 구성을 기획하는 단계입니다.</h3>
+                </div>
+                <div class="box a">
+                    <div class="textBox">
+                        <h2 class="tit cab"><span>01</span>Brain Storming</h2>
+                        <p class="sans">저의 포트폴리오 웹 사이트를 방문하실 사용자의 생각을<br class="mo">
+                            파헤쳐 보는 단계입니다. <br class="mo">
+                            사용자가 저에 대해 궁금할 사항들이 무엇일까 고민하고
+                            생각하는 단계입니다.
+                        </p>
+                    </div>
+                    <div class="imgBox">
+                        <img src="img/photo_1.png" alt="브레인스토밍">
+                    </div>
+                </div>
+                <div class="box b">
+                    <div class="imgBox">
+                        <img src="img/photo_2.png" alt="친화도법">
+                    </div>
+                    <div class="textBox">
+                        <h2 class="tit cab"><span>02</span>Affinity Diagram</h2>
+                        <p class="sans">
+                            브레인스토밍을 통해 얻은 아이디어를 정리하는 과정입니다. 
+                            <br class="mo">기술, 성격, 
+                            경력 등의 주제를 중심으로 연관성 있는 단어들을 분류합니다.
+                        </p>
+                    </div>
+                </div>
+                <div class="box c">
+                    <h2 class="tit cab"><span>03</span>Mind Mapping</h2>
+                    <div class="imgBox">
+                        <img src="img/mindmap.png" alt="마인드맵">
+                    </div>
+                </div>
+                <div class="box d">
+                    <h2 class="tit cab"><span>04</span>Concept</h2>
+                    <div class="keyWord">
+                        <h3 class="cab subtit">keyword</h3>
+                        <ul class="list">
+                            <li>포트폴리오</li>
+                            <li>함께하는 것의 가치</li>
+                            <li>조직과 융화</li>
+                            <li>채용자가 궁금한 것</li>
+                            <li>나의 업무 태도</li>
+                            <li>지원동기</li>
+                            <li>스킬</li>
+                            <li>다른 사람이 보는 나의 모습</li>
+                        </ul>
+                    </div>
+                    <div class="concept">
+                        <h3 class="cab subtit">concept</h3>
+                        <ul class="circle">
+                            <li>역동적</li>
+                            <li>전문성</li>
+                            <li>투명함</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box e">
+                    <h2 class="tit cab"><span>05</span>Group Idea Share</h2>
+                    <div class="imgBox">
+                        <img src="img/meeting.png" alt="그룹아이디어 공유">
+                    </div>
+                    <div class="textBox">
+                        <p class="sans">
+                            각자 생각한 포트폴리오 콘셉트에 대하여 마인드맵을 작성하고 공유하는 시간을 가졌습니다. <br class="mo">
+                            모든 팀원들이 포트폴리오에 들어갈 내용으로 업무 관련 역량, 성격, 커뮤니케이션 스킬에 대한 중요성을 강조하였습니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- research & prototyping -->
+        <section class="prototype" id="prototype">
+            <div class="inner">
+                <div class="titBox">
+                    <h2 class="bw">Research & Prototyping</h2>
+                    <h3 class="serif">포트폴리오의 시안을 작성하기 위해 <br class="mo">
+                        자료를 조사하고 초안작업을 하는 과정입니다.
+                    </h3>
+                </div>
+                <div class="research">
+                    <h2 class="tit cab"><span>01</span>Reference Research</h2>
+                    <a href="#" class="cab">MORE →</a>
+                    <div class="imgBox">
+                        <img src="img/r_1.png" alt="레퍼런스1">
+                        <img src="img/r_2.png" alt="레퍼런스2">
+                        <img src="img/r_3.png" alt="레퍼런스3">
+                        <img src="img/r_4.png" alt="레퍼런스4">
+                        <img src="img/r_5.png" alt="레퍼런스5">
+                        <img src="img/r_7.png" alt="레퍼런스7">
+                    </div>
+                </div>
+                <div class="sketch">
+                    <h2 class="tit cab"><span>02</span>Idea Sketch</h2>
+                    <div class="container">
+                        idea sketch
+                    </div>
+                </div>
+                <div class="style">
+                    <h2 class="tit cab"><span>03</span>Style Guide</h2>
+                    <div class="color">
+                        <h3 class="cab subtit">Color</h3>
+                        <ul class="colorBox">
+                            <li class="cab">#FFD500</li>
+                            <li class="cab">#FFF</li>
+                            <li class="cab">#000</li>
+                        </ul>
+                    </div>
+                    <div class="font">
+                        <h3 class="cab subtit">Font</h3>
+                        <div class="textBox">
+                            <ul class="krf">
+                                <li class="serif">Noto Serif KR</li>
+                                <li class="sans">Noto Sans KR</li>
+                            </ul>
+                            <ul class="enf">
+                                <li class="cab">Cabinet Grotesk</li>
+                                <li class="bw">BW Viviant</li>
+                                <li class="bq">Book Antiqua</li>
+                                <li class="en">Playball</li>
+                            </ul>
+                            <ul class="numf">
+                                <li class="num">Bahnschrift</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="logo">
+                        <h3 class="cab subtit">Logo</h3>
+                        <div class="textBox">
+                            <img src="img/logoimg.png" alt="로고설명">
+                            <p class="sans">
+                                제 영문 이름인 soyoung에 스마일 일러스트를 합성하여 만들었습니다. <br class="mo">
+                                긍정적이며 밝고 쾌활한 저의 모습을 로고를 통해 이미지화했습니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="siteMap">
+                    <h2 class="tit cab"><span>04</span>Site Map</h2>
+                    <div class="imgBox">
+                        <img src="img/site_map.png" alt="사이트맵">
+                    </div>
+                </div>
+                <div class="wireFrame">
+                    <h2 class="tit cab"><span>05</span>Wire Frame</h2>
+                    <div class="container">
+                        <div class="frame">wireFrame</div>
+                        <div class="frame"></div>
+                        <div class="frame"></div>
+                        <div class="frame"></div>
+                        <div class="frame"></div>
+                    </div>
+                </div>
+                <div class="proto">
+                    <h2 class="tit cab"><span>06</span>Prototype <span class="orange">full page</span></h2>
+                    <div class="imgBox">
+                        fullpage
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="publishing" id="publishing">
+            <div class="inner">
+                <div class="titBox">
+                    <h2 class="bw">Publishing</h2>
+                    <h3 class="serif">
+                        포트폴리오를 직접 코딩하는 과정을 담았습니다. <br class="mo">
+                        MORE 버튼을 클릭하시면 코드에 대한 설명과 문제 해결과정에 대해 더 자세히 보실 수 있습니다.
+                    </h3>
+                </div>
+                <a href="#" class="cab">MORE →</a>
+            </div>
+        </section>
+        <section class="result" id="result">
+            <div class="mockUp">
+                <h2 class="bq">Complete!</h2>
+                <h2 class="bq">Portfolio</h2>
+                <div class="imgBox">
+                    <img src="img/mock_up_img.png" alt="목업">
+                </div>
+            </div>
+            <div class="userTest">
+                <h2 class="tit cab"><span>01</span>Usability Test</h2>
+                <div class="imgBox">
+                    
+                </div>
+            </div>
+            <div class="presentation">
+                <h2 class="tit cab"><span>02</span>Presentation</h2>
+                <div class="imgBox">
+                    
+                </div>
+            </div>
+        </section>
+        <footer id="contact">
+            <div class="visit">
+                <h2 class="cab">
+                    THANK YOU FOR YOUR VISIT!
+                </h2>
+                <a href="#" class="cab">
+                    Portfolio Process →
+                    <!-- <img src="img/portfolio.png" alt="포트폴리오 프로세스 바로가기"> -->
+                </a>
+            </div>
+            <div class="contact">
+                <div class="inner">
+                    <h1 class="logo">
+                        <img src="img/logo_2.png" alt="soyoung 로고">
+                    </h1>
+                    <ul class="sns">
+                        <li>
+                            <a href="#">
+                                <img src="img/blog.png" alt="블로그 바로가기">
+                                <img src="img/blog_hover.png" alt="블로그 바로가기">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/gitsns.png" alt="깃허브 바로가기">
+                                <img src="img/gitsns_hover.png" alt="깃허브 바로가기">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/tistory.png" alt="티스토리 바로가기">
+                                <img src="img/tistory_hover.png" alt="티스토리 바로가기">
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="center">
+                        <h3 class="cab">Let's get in touch!</h3>
+                        <p class="sans">함께 나누고 싶은 이야기가 있으시다면!</p>
+                        <div class="path">
+                            <svg class="arrow" version="1.1" id="레이어_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                                y="0px" viewBox="0 0 291 132" style="enable-background:new 0 0 291 132;" xml:space="preserve">
+                                <path class="st0" d="M20.1,68.53c0,0,34.98,15.38,58.96,12.1c0,0,83.47-2.99,80.85-50.56c0,0-7.91-19.08-47.08-7.55
+                                    c0,0-34.24,7.64-40.75,35.85c0,0-5.24,35.63,42.13,46.53c0,0,38.81,12.22,98.22,9.18c0,0,45.34-2.39,64.85-8.53l-16.24-7.94"/>
+                                <line class="st0" x1="277.28" y1="105.54" x2="272.6" y2="122.28"/>
+                            </svg>
+                        </div>
+                        <div class="e_mail">
+                            <a href="#">
+                                <!-- <img src="img/touch.png" alt="마우스를 올려놓을 시 이메일이 표시됩니다."> -->
+                                <p class="cab">whthdud4356 <br>@naver.com</p>
+                            </a>
+                        </div>
+                        <a href="#" class="sans">
+                            이력서 열람하기 <span>→</span>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="footerbottom">
+                <img class="contactImg" src="img/contact.png" alt="contact">
+                <p class="cab">ⓒ 2022 SOYOUNG</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

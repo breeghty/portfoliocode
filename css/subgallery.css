@@ -1,0 +1,179 @@
+@charset "utf-8";
+
+main{
+    width: 100%; overflow: hidden; height: 100vh;
+    margin-bottom: 150px; position: relative;;
+}
+main .bg{
+    width: 100%;  position:relative;
+}
+main .bg:after{
+    content:''; position:absolute; background: #000; width:100%; height: 550px;
+    bottom:25%; left:0;
+}
+main .bg img{
+    width: 100%; opacity:0.2; display: block;
+}
+main .prev{
+    position:absolute; top:45%; left:1%; z-index: 10; color:#fff;
+    font-size: 22px;
+}
+main .next{
+    position:absolute; top: 45%; right:1%; z-index:10;color:#fff;
+    font-size: 22px;
+}
+main .prev:hover, main .next:hover, main .prev:focus, main .next:focus{
+    font-style: italic; text-decoration: underline; transition: all 0.5s ease;
+}
+main .inner{
+    width: 100%; margin:20px auto 0;  margin-top: 130px; display: flex;
+    justify-content: space-around;
+    position:absolute; top:-30%; left:0%; 
+}
+main .inner .imgBox{
+    width: 1600px; height: 1100px;
+    transform:translate(-150px, 10px);
+}
+main .inner .imgBox img{
+    width: 100%; height: 100%;
+}
+main .inner .textBox{
+    position:absolute; top:30%; right:15%; width: 25%;
+}
+main .inner .textBox h2{
+    font-size: 65px; font-weight: 800;text-align:right;
+}
+main .inner .textBox h2 span{
+    display: block; 
+}
+main .inner .textBox h3{
+    color:#787878; font-size: 20px; font-weight: 400;
+    text-align:right; margin-bottom: 5vw;
+}
+main .inner .textBox .btn{
+    display: flex; justify-content: space-between;
+    margin-bottom: 5vw; color:#000;
+    
+}
+main .inner .textBox .btn li{
+    padding: 10px 30px; box-sizing: border-box; background: #fff;
+    border-radius: 12px;
+}
+main .inner .textBox .btn li a{
+    display: block; width: 100%; height: 100%;
+}
+main .inner .textBox .point{
+    color:#fff;
+}
+main .inner .textBox .point li{
+    font-size:18px; font-weight: 300; margin-bottom: 0.5vw;
+}
+main .inner .textBox .point li:nth-child(1){
+    font-size:30px; font-weight: 800;
+}
+
+/* section fullpage */
+.full{
+    width: 100%; margin-bottom: 150px;
+}
+.full .inner{
+    width: 1660px; margin:0 auto;
+}
+.full .inner h2{
+    font-size: 2vw; font-weight: 800;
+    padding-left: 200px;
+}
+.full .mockupImg{
+    width: 100%; margin: 0 auto;
+}
+.full .mockupImg img{
+    width: 100%; transform: translateY(-100px); display: block;
+}
+.full .fullImg{
+    width: 100%; margin:0 auto;
+}
+.full .fullImg img{
+    width: 40%; display: block; margin:0 auto; transform: translateY(-220px);
+}
+
+/* .review*/
+.review{
+    width: 100%; margin-bottom: 120px;
+}
+.review .inner{
+    width: 1660px; margin:0 auto; position:relative;
+    height: 1300px; 
+}
+.review .inner .title{
+    position:absolute; top: 35%; left: 32%;
+}
+.review .inner h2{
+    font-size: 2vw; font-weight: 800;
+    padding-left: 200px; margin-bottom:  40px;
+}
+/* .review .inner .title a{
+    color:#fff; background: #000; padding: 5px 20px; box-sizing: border-box;
+    border-radius: 40px; display: inline-block; margin-left: 250px;
+} */
+
+.review .inner ul{
+    width: 100%;
+}
+.review .inner ul li{
+    position:absolute;width: 400px; height: 400px;
+    cursor: pointer; position: absolute;
+}
+.review .inner ul li:nth-child(1){
+    top:10%; left:5%;
+}
+.review .inner ul li:nth-child(2){
+    top:-10%; right:20%;
+}
+.review .inner ul li:nth-child(3){
+    bottom:35%; right:0%;
+}
+.review .inner ul li:nth-child(4){
+    bottom:10%; left:30%;
+}
+.review .inner ul li img{
+    width: 100%;
+}
+.review .inner ul li p{
+    background: #ffd500; width: 70%; margin-left: 20px; border-radius: 20px;
+    text-align: left; padding: 15px; box-sizing: border-box;
+    display: none; position: absolute;
+}
+.review .inner ul li:hover p{
+    display: block;
+}
+.review .inner ul li:nth-child(1) p{
+    top:20%; right:-80%;
+}
+.review .inner ul li:nth-child(3) p{
+    top:26%; left:-80%;
+}
+.review .inner ul li:nth-child(4) p{
+    top:-15%; left:-85%;
+}
+
+/* responsive web */
+/* 1720px~1401px */
+@media screen and (max-width:1720px){
+    main{width:100%;}
+    main .bg{width: auto;}
+    main .bg:after{
+        bottom:0%;  height: 60vh;
+    }
+    main .prev, main .next{top: 45%;}
+    main .inner{max-width: 95%; }
+    main .inner .imgBox{width: 90vw; height: 100vh;transform:translate(-150px, 80px); }
+    
+
+    /* fullpage */
+    .full{width: 100%;}
+    .full .inner{max-width: 95%;}
+
+    /* review */
+    .review{width: 100%;}
+    .review .inner{max-width: 85%; background: blue;}
+}
