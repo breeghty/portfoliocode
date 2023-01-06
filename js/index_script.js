@@ -194,3 +194,5 @@ const skill = document.getElementById('skill_title');
         }
         
     });
+    
+

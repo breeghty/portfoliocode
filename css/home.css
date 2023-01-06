@@ -49,14 +49,14 @@ display: inline-block; margin: 0 10px 90px;
     margin-bottom: 5px;
 }
 .main .inner .img_1{
-    position:absolute; bottom: 4%; left:15%;
+    position:absolute; bottom: 4%; left:13%;
 
 }
 .main .inner .img_2{
-    position:absolute;  top:18%; right: 18%;
+    position:absolute;  top:18%; right: 15%;
 }
 .main .inner .img_3{
-    position:absolute; right: 13%; top: 55%;
+    position:absolute; right: 10%; top: 55%;
     animation:rotateImg 4s linear infinite;
 }
 @keyframes rotateImg {
@@ -133,7 +133,7 @@ display: inline-block; margin: 0 10px 90px;
 
 .about .profile .inner .txtBox{
     margin-bottom: 40px; text-align: left;
-    display: block; padding: 15px 150px 150px; box-sizing: border-box;
+    display: block; padding: 45px 150px 150px; box-sizing: border-box;
     width: 50%; float:right;
 }
 .about .profile .inner .txtBox > h3{
@@ -155,15 +155,15 @@ display: inline-block; margin: 0 10px 90px;
     margin-bottom: 35px;
 }
 .about .profile .inner .txtBox h3.bw{
-    font-size: 24px; font-weight: 500; margin-bottom: 15px;
+    font-size: 20px; font-weight: 500; margin-bottom: 15px;
     position:relative; z-index: 2;
 }
 .about .profile .inner .txtBox h3.bw::after{
     position: absolute; content:''; background:rgba(255,234,0,0.7); 
-    width:30%; height: 30px; left:-1%; z-index: -1; top:-2%;
+    width:25%; height: 23px; left:-1%; z-index: -1; top:-2%;
 }
 .about .profile .inner .txtBox .edu p,.about .profile .inner .txtBox .cert p {
-    font-size: 18px; margin-bottom: 5px;
+    font-size: 15px; margin-bottom: 5px;
 }
 
 
@@ -275,9 +275,9 @@ display: inline-block; margin: 0 10px 90px;
     font-size:65px; font-weight: 500; text-align: center; margin-bottom: 10px;
     display: inline-block; margin-right: 55px; margin-left: 80px;
 }
-.projects .gallery .inner .galTit h2 span{
+/* .projects .gallery .inner .galTit h2 span{
     color:transparent; -webkit-text-stroke: 1px #000; font-weight: 700;
-}
+} */
 .projects .gallery .inner .galTit h3.serif{
     text-align: center; font-size: 18px;
     display: inline-block;
@@ -308,8 +308,7 @@ display: inline-block; margin: 0 10px 90px;
     text-align: right; transform: translateX(-150PX);
 }
 .projects .ncs .inner .ncsTit h2 span{
-    color:transparent; -webkit-text-stroke: 1px #000; font-weight: 700;
-    display: inline-block; margin-right:12px;
+    margin-right:12px;
 }
 .projects .ncs .inner .ncsTit h3.serif{
     text-align: center; font-size: 18px; transform: translate(70px,52px);
@@ -342,7 +341,7 @@ display: inline-block; margin: 0 10px 90px;
     transform: translate(-10%,-200%);
 }
 .value .titBox p.bw{
-    font-size: 20px; margin: 20px 50px;
+    font-size: 20px; margin: 20px 50px; font-weight: 500;
 }
 .value .inner{
     width: 1660px; margin: 0 auto; display: flex; justify-content: space-between;
@@ -611,10 +610,10 @@ display: inline-block; margin: 0 10px 90px;
 /* 모바일해상도 767px 이하 */
 @media screen and (max-width: 767px){
     /* main */
-    .main{width: 100%; height: 80vh;}
+    .main{width: 100%; height: 100vh;}
     .main .inner{max-width:95%;transform: translateY(50px);}
     .main .inner h3{font-size: 1rem; margin-bottom: 80px;}
-    .main .inner h2{font-size: 3.8rem;}
+    .main .inner h2{font-size: 3rem;}
     .main .inner .img_1, .main .inner .img_2{display: none;}
     .main .inner .mainTitBox h2:nth-child(2){transform: translateX(0px); margin-bottom: -8px;}
     .main .inner h2 img{width: 15px; height: 20px; transform: translateY(15px);}
@@ -626,7 +625,7 @@ display: inline-block; margin: 0 10px 90px;
     .main .inner .list li{font-size: 0.8rem;}
 
     /* about */
-    .about .profile{height: 100vh; position: relative;}
+    .about .profile{position: relative; height: 1000px;}
     .about .profile .inner .titBox{text-align: left;}
     .about .profile .inner .titBox h2{font-size: 2.8rem; transform: translate(100px,0);}
     .about .profile .inner .titBox h2:nth-child(2){display: inline-block; transform: translateX(100px);

@@ -3,19 +3,19 @@
 /* section. visual */
 .main{
     width: 100%; overflow: hidden; background: #f7f7f7; height: 100vh;
-    margin-bottom:80px;
+    margin-bottom:70px;
 }
 .main .inner{
-    width: 1660px; margin:20px auto 0;  margin-top: 280px;
+    width: 1440px; margin:20px auto 0;  margin-top: 280px;
     position: relative;
 }
 .main .inner .titBox{
     font-size: 180px; text-align: center;
     width: 80%; line-height: 0.85; position: relative; z-index: 1; 
-    letter-spacing: 3px; margin-left: 80px;
+    letter-spacing: 3px; margin-left: 10px;
 }
 .main .inner .titBox h2{
-    color:#ffd500; margin-left: 90px;
+    color:#ffd500; 
 }
 
 .main .inner .titBox h2 span.trn{
@@ -27,7 +27,7 @@
     right: -4%; bottom:-48%; font-size: 6vw;
 }
 .main .inner .txtBox{
-    position:absolute; left: 25%; bottom: -130%;
+    position:absolute; left: 15%; bottom: -130%;
 }
 
 /* title font size 공통*/
@@ -47,19 +47,40 @@ section p{
     font-size: 18px; font-weight: 300;
 }
 
+/* section result */
+.result{
+    width: 100%; 
+    padding: 1vh 2vh; box-sizing: border-box;  margin-bottom: 10vw;
+}
+.result .inner{width: 1660px; margin:0 auto;}
+.result .inner .mockUp{width: 100%;}
+.result .inner .mockUp .imgBox{width:100%;  height: 100%; margin:0 auto; }
+.result .inner .mockUp .imgBox img{width: 100%; height: 100%; }
+
+.result .inner .btn{
+    z-index: 3;
+    width: 80%; margin:0 auto;display: flex; justify-content: space-around;
+}
+.result .inner .btn li{width: 15%; margin-left: 20px; border-radius: 10px;
+padding: 5px 10px; box-sizing: border-box; background: #000;}
+.result .inner .btn li a{display: block; width: 100%; height: 100%; color:#fff; text-align: center; font-weight: 300;}
+.result .inner .btn li:hover, .result .inner .btn li:focus{
+    box-shadow: 4px 4px 3px rgba(0,0,0,0.3); transition: all 0.3s ease;
+}
 
 /* section.design */
 .design{
-    width: 100%; overflow: hidden; margin-bottom: 10vh;
+    width: 100%; overflow: hidden; margin-bottom: 3vh;
 }
 .design .inner{
-    width: 1660px; margin:100px auto 0;
+    width: 1440px; margin:50px auto 0;
 }
 .design .inner .titBox{
-    text-align: center; margin-bottom: 10vh;
+    margin-bottom: 16vh;margin-left:0px; text-align: center; width:100%;
 }
 .design .inner .titBox h2{
-    margin-bottom: 15px;
+    margin-bottom: 10px; width: 100%;
+    font-weight: 500;
 }
 
 /* design_01 */
@@ -67,32 +88,32 @@ section p{
     margin-bottom: 15vh;
 }
 .design .inner .box.a, .design .inner .box.b {
-    display: flex; justify-content: space-around;
+    display: flex; justify-content: space-between;
     overflow: hidden;
 }
 .design .inner .box.a .imgBox, .design .inner .box.b .imgBox{
-    width: 550px; height: 550px;
+    width: 600px; height: 500px;
 }
 .design .inner .box.a .textBox, .design .inner .box.b .textBox{
-    margin-top: 70px;
+    margin-top: 110px;
 }
 .design .inner .box .imgBox img{
     width: 100%; height: 100%;
 }
-
+.design .inner .box.b .textBox{transform: translateX(-65px);}
 .design .inner .box.c h2.tit, .design .inner .box.d h2.tit, .design .inner .box.e h2.tit{
-    margin-left: 150px; margin-bottom: 8vh;
+    margin-bottom: 8vh;
 }
 .design .inner .box.c .imgBox, .design .inner .box.e .imgBox{
-    width: 50vw; height: 600px; transform: translate(40%);
+    width: 60vw; height: 600px; transform: translate(15%);
 }
 
 
 .design .inner .box.d .keyWord, .design .inner .box.d .concept{
-    margin:0 auto; width: 80%; margin-bottom: 5vh;
+    margin:0 auto; width: 90%; margin-bottom: 5vh;
 }
 .design .inner h3.subtit{
-    font-size: 1.2vw; color:#FF4E00; margin-bottom: 5vh;
+    font-size: 1.2vw; color:#FF4E00; margin-bottom: 5vh; margin-left: 40px;
 }
 .design .inner .box.d .keyWord ul{
     width: 80%; margin:0 auto; display: flex; flex-wrap:wrap;
@@ -160,7 +181,7 @@ section p{
 
 
 .design .inner .box.e p{
-    width: 60%;margin-top: 3vh; margin-left: 390px;
+    width: 80%;margin-top: 3vh; margin-left: 175px;
 }
 
 
@@ -174,52 +195,70 @@ section p{
 
 /* section.prototype */
 .prototype{
-    width: 100%; overflow: hidden;
+    width: 100%;  margin-bottom: 10vh;
 }
 .prototype .inner{
-    width: 1660px; margin:100px auto 0;
+    width: 1440px; margin:50px auto 0; height: 9500px;
 }
 .prototype .inner .titBox{
-    text-align: right; margin-bottom: 10vh;
-    margin-right: 70px;
+    margin-bottom: 16vh; 
+    text-align: center;
 }
 
 .prototype .inner .titBox h2{
-    margin-bottom: 15px; 
+    margin-bottom: 10px;  font-weight: 500;
 }
 .prototype .inner h2.tit.cab{
-    margin-left: 150px; margin-bottom: 3vh;
+    margin-bottom: 3vh;
+}
+
+/* 레퍼런스리서치 */
+.prototype .inner .research{
+    margin-bottom: 20vh;
 }
 .prototype .inner .research a{
     color:#fff; font-size: 0.8vw; background: #000;
-    display: inline-block; margin-left: 8vw; margin-bottom: 10vh;
+    display: inline-block; margin-bottom: 10vh;
     padding: 5px 20px; border-radius: 40px; 
 }
 
 .prototype .inner .research .imgBox{
-    width: 80%; margin:0 auto; height:600px; 
+    width: 100%; margin:0 auto; height:600px; 
     display: flex; flex-flow:row wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .prototype .inner .research .imgBox img{
-    width: 350px; height: 200px;
+    width: 390px; height: 220px;
 }
 
+/* 아이디어스케치 */
+.prototype .inner .sketch{
+    margin-bottom: 20vh;
+}
 .prototype .inner .sketch .tit{
-    text-align: right; margin-right: 4vw;
+    margin-right: 4vw;
 }
 .prototype .inner .sketch .container{
-    background: #ccc; width: 90%; margin: 0 auto;
+    width: 100%; margin: 0 auto; display: flex; justify-content: space-around;
+    flex-wrap: wrap;
+}
+.prototype .inner .sketch .container li{width: 20%;}
+.prototype .inner .sketch .container li .imgBox{
+    width: 300px;
+}
+.prototype .inner .sketch .container li .imgBox img{
+    width: 100%;
 }
 
+/* 스타일가이드 */
 .prototype .inner h3.subtit{
     font-size: 1.2vw; color:#FF4E00; margin-bottom: 5vh;
 }
 .prototype .inner .style{
-    margin-bottom: 25vh;
+    margin-bottom: 20vh;
 }
 .prototype .inner .color, .prototype .inner .font, .prototype .inner .logo{
-    width: 80%; margin: 0 auto;
+    width: 100%; margin: 0 auto;
     margin-bottom: 10vh;
 }  
 .prototype .inner .color ul{
@@ -287,9 +326,7 @@ section p{
     content:'인덱스 영문 필기체 폰트'; font-size: 0.85vw;line-height: 1.5;
     bottom:75%; right:-30%; 
 }
-.prototype .inner .font .textBox ul li:nth-child(2n-1){
-    transform: translateY(50px);
-}
+
 
 .prototype .inner .logo .textBox{
     display: flex; justify-content: space-around;
@@ -297,72 +334,382 @@ section p{
 .prototype .inner .logo .textBox p{
     line-height: 1.7;
 }
-
+/* 사이트맵 */
 .prototype .inner .siteMap{
-    margin-bottom: 10vh;
+    margin-bottom: 20vh;
 }
 .prototype .inner .siteMap .tit{
-    text-align: center;
+    text-align: left;
 }
 .prototype .inner .siteMap .tit span{
-    transform: translateX(-50px);
+    transform: translateX(0px);
 }
-.prototype .inner .siteMap .imgBox{
-    width: 50vw; height: 600px; margin-left: 400px;
+.prototype .inner .siteMap .imgBox, .prototype .inner .userTest .imgBox, .prototype .inner .presentation .imgBox{
+    width: 60vw; height: 600px;transform: translate(15%);
 }
-.prototype .inner .siteMap .imgBox img{
+.prototype .inner .siteMap .imgBox img,.prototype .inner .userTest .imgBox img, .prototype .inner .presentation .imgBox img{
     width: 100%; height: 100%; 
 }
-
 .proto span.orange{
     color:#FF4E00; display: inline-block; margin-left: 15px;
 }
+/* 와이어프레임 */
+.prototype .inner .wireFrame .container{
+    width: 100%; margin: 0 auto; display: flex; justify-content: space-around;
+    flex-wrap: wrap; height: 1550px; 
+}
+.prototype .inner .wireFrame .container li{width:20%;}
+.prototype .inner .wireFrame .container li .imgBox{width: 400px;}
+.prototype .inner .wireFrame .container li .imgBox img{width: 100%;}
+
+/*  프로토타입 */
+.prototype .inner .proto .container{
+    width: 100%; margin: 0 auto; display: flex; justify-content: space-around;
+    flex-wrap: wrap;height: 1550px;
+}
+.prototype .inner .proto .container li{width:20%;}
+.prototype .inner .proto .container li .imgBox{width: 400px;}
+.prototype .inner .proto .container li .imgBox img{width: 100%;}
+
+/* 사용성테스트 */
+.prototype .inner .userTest{margin-bottom: 20vh;}
+/* 프레젠테이션 */
+.prototype .inner .presentation{margin-bottom: 20vh;}
+
+/* responsive web */
+/* 1720px~1401px */
+@media screen and (max-width:1720px){
+    .main{width: 100%;}
+    .main .inner{max-width:95%;}
+    .main .inner .txtBox{left: 15%; bottom: -192%;}
+
+    /* result */
+    .result{width: 100%;}
+    .result .inner{max-width: 95%;}
+    
+    section h2.tit{font-size:2.2vw;}
+
+    /* design process */
+    .design{width: 100%;}
+    .design .inner{max-width: 90%; padding: 0px 100px;box-sizing: border-box;}
+    .design .inner .titBox{margin-left: 0px;}
+    .design .inner .titBox h2.bw{font-size: 58px;}
+    .design .inner .box.a .textBox{margin-left: 10px;}
+    .design .inner .box.a .imgBox, .design .inner .box.b .imgBox{
+        width: 35vw; height: 450px;
+    }
+    .design .inner .box.b .textBox{transform: translateX(0px);}
+
+
+    .design .inner .box.c .imgBox{transform: translate(15%);width: 60vw; height: 600px;}
+    .design .inner h3.subtit{margin-left: 0;}
+    .design .inner .box.d .keyWord{width: 90%;}
+    .design .inner .box.d .keyWord ul{width: 100%;}
+    .design .inner .box.d .keyWord ul li{width: 18%;}
+    .design .inner .box.d .concept ul li:nth-child(1)::after{left: -15%; top:0%;}
+    .design .inner .box.d .concept ul li:nth-child(2)::after{left: -10%; top:-2%;}
+    .design .inner .box.d .concept ul li:nth-child(3)::after{top:-2%; left:-15%;}
+    .design .inner .box.e .imgBox{transform: translate(15%);width: 60vw; height: 600px;}
+    .design .inner .box.e p{width: 75%; margin-left: 136px;}
+
+    /* prototype */
+    .prototype{width: 100%;}
+    .prototype .inner{max-width: 90%; padding: 0px 100px;box-sizing: border-box;
+    height: 8500px;}
+    .prototype .inner .titBox{margin-left: 13px;}
+    .prototype .inner .research a{margin-left: 0vw;}
+    .prototype .inner .titBox h2{font-size: 58px;}
+    .prototype .inner .research .imgBox img {
+        width: 335px;
+        height: 210px;
+        margin-bottom: 5vh;
+    }
+    .prototype .inner .logo .textBox img{transform: scale(0.9); transition: all 0.3s ease;}
+    .prototype .inner .wireFrame .container{height: 120vh; }
+    .prototype .inner .wireFrame .container li{width:25%;}
+    .prototype .inner .wireFrame .container li .imgBox{width: 280px;}
+    
+    
+    .prototype .inner .proto .container{height: 120vh;}
+    .prototype .inner .proto .container li{width:25%;}
+    .prototype .inner .proto .container li .imgBox{width: 280px;}
 
 
 
-/* publishing */
-.publishing{
-    width: 100%; overflow:hidden; height: 900px;
-    background:url(../img/gif_ex.gif)no-repeat center/cover; 
-    background-attachment:fixed ;
-}
-.publishing .inner{
-    width: 1660px; margin:100px auto 0;
-}
-.publishing .inner .titBox{
-    text-align: center; margin-top: 300px;
-    line-height: 1.5; color:#fff;
-}
-.publishing .inner .titBox h2{
-    margin-bottom: 1vw;
-}
-.publishing .inner a{
-    color:#000; font-size: 0.85vw; background: #fff;
-    display: inline-block; margin-left: 7vw;
-    padding: 5px 20px; border-radius: 40px;  transform: translate(650px, 50px);
 }
 
-/* section result */
-.result{
-    width: 100%; overflow: hidden;
-    padding: 20vh 0; box-sizing: border-box;
-}
-.result .mockUp{
-    width: 100%; position:relative; height: 1200px;
-    margin-bottom: 20vh;
-}
-.result .mockUp h2{
-    font-size: 200px; color:transparent;-webkit-text-stroke: 1px #000;
-    transform: rotate(-90deg); position:absolute; top:50%; left:-3%;
-}
-.result .mockUp h2:nth-child(2){
-    transform: rotate(90deg); right:-70%; top: 120%; 
-}
-.result .mockUp .imgBox{
-    transform: translate(-50px); position:absolute; top:0; left:0;
+/* 1400px~1024px */
+@media screen and (max-width: 1400px){
+    .main{width: 100%;}
+    .main .inner{max-width:95%; margin-left: 55px;}
+    .main .inner .titBox{font-size: 14vw;}
+    .main .inner .txtBox{font-size:1.3vw;left: 10%;}
+
+    /* result */
+    .result{width: 100%;}
+    .result .inner{max-width: 95%;}
+    .result .inner .mockUp .imgBox{width: 100%; height: 80vh;}
+    .result .inner .mockUp .imgBox img{width: 100%; height: 100%;}
+    
+    section h2.tit{margin-bottom: 20px;}
+    section p{font-size: 16px;}
+    section p br.mo{display: none;}
+
+    /* design process */
+    .design{width: 100%;}
+    .design .inner{max-width: 95%; padding: 0px 100px;box-sizing: border-box;}
+    .design .inner .titBox h2.bw{font-size: 54px;}
+    section h2.tit{font-size:2.5vw;}
+    .design .inner .box.a .imgBox, .design .inner .box.b .imgBox{
+        width: 80vw; height: 380px;
+    }
+    .design .inner .box.a .textBox{margin-right: 50px;}
+    .design .inner .box.b .textBox{margin-left: 50px;}
+    .design .inner .box.c .imgBox{transform: translate(0%);width: 70vw; height: 500px;}
+    .design .inner .box.d .keyWord{width: 100%;}
+    .design .inner .box.d .concept{width: 100%;}
+    .design .inner .box.e .imgBox{transform: translate(0%);width: 70vw; height: 500px;}
+    .design .inner .box.e p{margin-left: 0px; width: 98%;}
+    .design .inner .box.d .concept ul li:nth-child(1)::after,.design .inner .box.d .concept ul li:nth-child(2)::after,
+    .design .inner .box.d .concept ul li:nth-child(3)::after{
+        padding: 125px 50px;
+    }
+
+/* prototype */
+    .prototype{width: 100%;}
+    .prototype .inner{max-width: 95%; padding: 0px 100px;box-sizing: border-box;
+    height: 7500px;}
+    .prototype .inner .titBox h2{font-size: 54px;}
+    .prototype .inner .research .imgBox{justify-content: space-around;}
+    .prototype .inner .sketch .container li .imgBox{
+        width: 200px;
+    }
+    .prototype .inner .color ul li{width: 230px; height: 95px;}
+    .prototype .inner .logo .textBox img{transform: scale(0.7); transition: all 0.3s ease;}
+
+    .prototype .inner .siteMap .imgBox{width: 70vw; height: 500px;
+    transform: translateX(0);}
+    .prototype .inner .siteMap .imgBox img{width: 100%;}
+    
+    .prototype .inner .wireFrame .container{height: 100vh; }
+    .prototype .inner .wireFrame .container li{width:25%;}
+    .prototype .inner .wireFrame .container li .imgBox{width: 250px;}
+    
+    
+    .prototype .inner .proto .container{height: 100vh;}
+    .prototype .inner .proto .container li{width:25%;}
+    .prototype .inner .proto .container li .imgBox{width: 250px;}
+
+    
+    .prototype .inner .userTest .imgBox, .prototype .inner .presentation .imgBox{width: 70vw; height: 500px;
+        transform: translateX(0);}
+
 }
 
-.result .userTest, .result .presentation{
-    width: 80%; margin:0 auto; margin-bottom: 15vh;
-}
+/* 1024이하 tablet  768까지*/
+@media screen and (max-width:1000px){
+    .main{width: 100%;}
+    .main .inner{max-width:95%; margin-left: 55px;}
+    .main .inner .titBox{font-size: 16vw;}
+    .main .inner .txtBox{font-size:1.8vw;left: 6%;}
 
+    .result{width: 100%;}
+    .result .inner{max-width: 95%;}
+    .result .inner .mockUp .imgBox{width: 100vw; height: 80vh; transform: translate(-5%,0);}
+    .result .inner .btn li a{font-size: 1rem;}
+    
+    .design .inner h3.subtit{font-size: 2vw;}
+
+    /* design */
+    .design .inner .titBox h2.bw{font-size: 45px;}
+    .design .inner .titBox h3.serif{font-size: 0.9rem;}
+    .design .inner .box.a .imgBox, .design .inner .box.b .imgBox{
+        width: 100vw; height: 300px;
+    }
+    .design .inner .box.a .textBox, .design .inner .box.b .textBox{
+        margin-top: 80px;
+    }
+    .design .inner .box.c h2.tit, .design .inner .box.d h2.tit, .design .inner .box.e h2.tit{
+        margin-bottom: 3vh;
+    }
+    .design .inner .box.c .imgBox, .design .inner .box.e .imgBox{transform: translate(0%);width: 70vw; height: 400px;}
+    .design .inner .box.e p{width: 100%;}
+    .design .inner .box.d .keyWord ul{width: 115%;}
+    .design .inner .box.d .keyWord ul li{width: 35%; margin-left: 20px;}
+    .design .inner .box.d .concept ul li{width: 180px; height: 180px; 
+    line-height: 186px;}
+    .design .inner .box.d .concept ul li:nth-child(1)::before, .design .inner .box.d .concept ul li:nth-child(2)::before,
+    .design .inner .box.d .concept ul li:nth-child(3)::before{
+        width: 0px; height: 180px;
+    }
+    .design .inner .box.d .concept ul li:nth-child(1)::after,.design .inner .box.d .concept ul li:nth-child(2)::after,
+    .design .inner .box.d .concept ul li:nth-child(3)::after{
+        padding: 70px 3px; font-size: 1vw;
+    }
+    /* hover 시 concept 보이게 하기 */
+.design .inner .box.d .concept ul li:hover:before,.design .inner .box.d .concept ul li:focus:before {
+    width: 180px; transition: background-color 0.5s ease-in-out; z-index: 2;
+}
+    /* prototype */
+    .prototype .inner{height: 6600px;}
+    .prototype .inner .titBox h3.serif{font-size: 0.9rem;}
+    .prototype .inner .titBox h2.bw{font-size: 45px;}
+    .prototype .inner .research{margin-bottom: 15vh;}
+    .prototype .inner .research .imgBox img {
+        width: 30vw;
+        height: 20vh;
+        margin-bottom: 5vh;
+    }
+    .prototype .inner .sketch {
+        margin-bottom: 8vh;
+    }
+    .prototype .inner .sketch .container li{width: 35%;margin-bottom: 30px;}
+    .prototype .inner .sketch .container li .imgBox{
+        width: 200px; 
+    }
+    .prototype .inner .sketch .container li .imgBox img{
+        width: 100%;
+    }
+    .prototype .inner .style {
+        margin-bottom: 10vh;
+    }
+    .prototype .inner h3.subtit{font-size:1.9vw;}
+    .prototype .inner .color ul li{width: 180px; height: 95px;}
+    .prototype .inner .font .textBox ul li{width: 110px; height: 30px;}
+    .prototype .inner .logo .textBox img{transform: scale(0.6);}
+    .prototype .inner .logo .textBox P{font-size: 0.9rem;}
+
+    .prototype .inner .siteMap {
+        margin-bottom: 10vh;
+    }
+    .prototype .inner .siteMap .imgBox{width: 70vw; height: 350px;
+        transform: translateX(0);}
+    .prototype .inner .userTest .imgBox, .prototype .inner .presentation .imgBox{width: 70vw; height: 350px;
+        transform: translateX(0);}
+
+    .prototype .inner .wireFrame .container{height: 100vh; }
+    .prototype .inner .wireFrame .container li{width:25%;}
+    .prototype .inner .wireFrame .container li .imgBox{width: 200px;}
+    
+    .prototype .inner .proto .container{height: 100vh;}
+    .prototype .inner .proto .container li{width:25%;}
+    .prototype .inner .proto .container li .imgBox{width:200px;}
+
+    .prototype .inner .userTest{margin-bottom: 10vh;}
+    .prototype .inner .presentation{margin-bottom: 10vh;}
+}
+/* 모바일해상도 767px 이하 */
+@media screen and (max-width: 767px){
+    .main{width:100%;height: 100vh;}
+    .main .inner{max-width:95%;}
+    .main .inner .titBox{font-size: 17vw;}
+    .main .inner .txtBox{left: 4%;}
+    
+    .result{width: 100%;}
+    .result .inner{max-width: 95%;}
+    .result .inner .mockUp .imgBox{width: 100vw; height: 60vh;}
+    .result .inner .btn li a{font-size:2vw;}
+
+    section h2.tit{font-size: 4.5vw;}
+    section h2.tit span{font-size: 2vw;}
+    section p{font-size: 14px;}
+    /* design */
+    .design{width: 100%;}
+    .design .inner{max-width: 90%; padding: 0 10px;}
+    .design .inner .box {
+        margin-bottom: 5vh;
+    }
+    .design .inner .titBox {margin-bottom: 3vh;}
+    .design .inner .titBox h2.bw{font-size: 6.5vw;}
+    .design .inner .titBox h3.serif{font-size: 0.8rem;}
+    .design .inner h3.subtit {
+        font-size: 3vw;
+    }
+
+    .design .inner .box.a .imgBox, .design .inner .box.b .imgBox{
+        width: 80vw; height: 40vh;
+    }
+    .design .inner .box.a{
+        flex-direction: column;
+    }
+    .design .inner .box.a .textBox, .design .inner .box.b .textBox {
+        margin-top: 10px;
+    }
+    .design .inner .box.a .textBox p, .design .inner .box.b .textBox p{margin-bottom: 25px;}
+    .design .inner .box.b{
+        flex-direction: column-reverse;
+    }
+    .design .inner .box.b .textBox {
+        margin-left: 0px;
+    }
+    .design .inner .box.c .imgBox, .design .inner .box.e .imgBox{transform: translate(0%);width: 80vw; height:40vh;}
+    .design .inner .box.d .keyWord ul {
+        width: 100%;
+    }
+    .design .inner .box.d .keyWord ul li {
+        width: 46%;
+        margin-left: 25%;
+    }
+    .design .inner .box.d .concept ul li {
+        width: 150px;
+        height: 150px;
+        line-height: 152px;
+    }
+    .design .inner .box.d .concept ul li:nth-child(1)::after, .design .inner .box.d .concept ul li:nth-child(2)::after, .design .inner .box.d .concept ul li:nth-child(3)::after {
+        display: none;
+    }
+    .design .inner .box.d .concept ul li:before{
+        display: none;
+    }
+    
+
+    /* prototype */
+    .prototype{width: 100%;}
+    .prototype .inner{max-width: 90%; padding: 0 10px; height: 6800px;}
+    .prototype .inner .titBox {
+        margin-bottom: 5vh;
+    }
+    .prototype .inner .titBox h2.bw{font-size: 6.5vw;}
+    .prototype .inner h3.subtit{font-size: 3.5vw;}
+
+    .prototype .inner .research {
+        margin-bottom: 60vh;
+    }
+    .prototype .inner .research .imgBox img {
+        width: 45vw;
+        height: 15vh;
+        margin-bottom: 5vh;
+    }
+    .prototype .inner .color ul{flex-direction: column;}
+    .prototype .inner .color ul li {
+        width: 229px;
+        height: 95px;
+        margin-bottom: 30px; margin-left: 20%;
+    }
+    .prototype .inner .font .textBox ul{flex-direction: column;margin-bottom: 1vh;}
+    .prototype .inner .font .textBox ul li{width: 100%; line-height:1;
+    margin-bottom: 30px;font-size: 5vw;}
+    .prototype .inner .font .textBox ul li:after{display: none;}
+    .prototype .inner .logo .textBox{flex-direction: column;}
+    .prototype .inner .logo .textBox img {
+        width: 80vw; height: 10vh;
+    }
+    .prototype .inner .logo .textBox p {
+        font-size: 0.9rem; 
+    }
+
+    .prototype .inner .siteMap .imgBox{width: 80vw; height: 300px;
+        transform: translateX(0);}
+    .prototype .inner .userTest .imgBox, .prototype .inner .presentation .imgBox{width: 80vw; height: 300px;
+        transform: translateX(0);}
+    
+    .prototype .inner .wireFrame .container{height: 70vh; transform: translateX(-40px); }
+    .prototype .inner .wireFrame .container li{width:20%;}
+    .prototype .inner .wireFrame .container li .imgBox{width: 150px;}
+    
+    .prototype .inner .proto .container{height: 70vh;transform: translateX(-40px); }
+    .prototype .inner .proto .container li{width:20%;}
+    .prototype .inner .proto .container li .imgBox{width:150px;}
+
+
+}

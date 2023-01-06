@@ -4,7 +4,9 @@
 @import url('https://fonts.cdnfonts.com/css/book-antiqua');
 @import url('https://fonts.cdnfonts.com/css/bw-vivant');
 @import url('https://fonts.cdnfonts.com/css/bahnschrift');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+
 /*reset*/
 *{padding: 0; margin: 0;}
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td{margin:0;padding:0;}
@@ -14,7 +16,32 @@ img {vertical-align: middle;}
 a img {border: none;}
 li {list-style: none;}
 
-/* font */
+@font-face{
+    font-family:bw vivant;
+    font-style:normal; 
+    src:local('Bw Vivant'), 
+    url(../font/bw-vivant-medium.ttf) format('truetype'),
+    url(../font/bw-vivant-regular.ttf) format('truetype'),
+    url(../font/bw-vivant-bold.ttf) format('truetype');
+}
+@font-face{
+    font-family:cabinet grotesk;
+    src:local('Cabinet Grotesk'),
+    url(../font/CabinetGrotesk-Medium.otf) format('opentype');
+}
+@font-face{
+    font-family:cabinet grotesk;
+    src: local('Cabinet Grotesk'), url(../font/CabinetGrotesk-Extrabold.otf) format('opentype');
+    font-style: normal;
+    font-weight: 800;
+
+}
+@font-face{font-family:book antiqua;
+    src:local('Book Antiqua'),url(../font/Book\ Antiqua\ Bold.ttf) format('truetype'),
+    url(../font/Book\ Antiqua\ Font.ttf) format('turetype');
+}
+
+    
 .cab{
     font-family: 'Cabinet Grotesk', sans-serif;
 }

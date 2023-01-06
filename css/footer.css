@@ -14,6 +14,7 @@ footer .visit h2{
 footer .visit a{
     display: block; position:absolute; right:15%; top:35%; color:#fff;
     font-size: 16px; background: #000; padding: 12px; border-radius: 40px;
+    font-weight: 300;
 }
 footer .visit a:hover, footer .visit a:focus{
     background: #fff; color:#000; box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
@@ -71,10 +72,10 @@ footer .contact .inner .center{
     color:#fff;
 }
 footer .contact .inner .center h3{
-    font-size:65px; margin-bottom: 20px;
+    font-size:60px; margin-bottom: 20px;
 }
 footer .contact .inner .center p{
-    font-size: 18px; font-weight: 200;
+    font-size: 16px; font-weight: 200;
 }
 footer .contact .inner .center .path{
     position:absolute; right:-60%; top:30%;
@@ -114,8 +115,8 @@ footer .contact .inner .center .e_mail a:hover p.cab, footer .contact .inner .ce
     animation:static;
 }
 footer .contact .inner .center a.sans{
-    display: inline-block; background: #fff; color:#000; font-size: 18px; font-weight: 400;
-    text-align: center; border-radius: 40px; padding: 15px 30px; margin: 85px auto; box-sizing: border-box;
+    display: inline-block; background: #fff; color:#000; font-size: 16px; font-weight: 400;
+    text-align: center; border-radius: 40px; padding: 10px 20px; margin: 85px auto; box-sizing: border-box;
 }
 footer .contact .inner .center a.sans:hover, footer .contact .inner .center a.sans:focus{
     background:  #ffea00; transition:all 0.3s; font-weight: 700;
@@ -135,7 +136,7 @@ footer .footerbottom{
     display: flex;
 }
 footer .footerbottom p.cab{
-    font-size: 18px; margin:150px 80px;
+    font-size: 16px; margin:150px 80px;
 }
 footer .contact_2{display: none;}
 

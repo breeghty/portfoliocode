@@ -587,6 +587,62 @@
         width: 180px; height: 150px;  right:6%; top:0;
     }
     .main .inner .txtBox{font-size: 1.7vw;}
+
+    .publishing{width: 100%;}
+    .publishing .inner{
+        max-width: 95%;overflow: hidden;
+    }
+    .publishing .inner .leftTit h2{font-size: 6vw;}
+    .publishing .inner .leftTit h2:after{left: 42%; font-size: 0.9rem;}
+    .publishing .inner .swiper{width: 95%;
+    margin-left: 80px;}
+    .publishing .inner .swiper .swiper-slide{transform: translateX(-100px);}
+    .publishing .inner .swiper .swiper-slide.swiper-slide-active .textBox .sTxt{
+        left: -40%; font-size:2.5vw;
+    }
+    .publishing .inner .swiper .swiper-slide.swiper-slide-active .textBox .bTxt{
+        right:20%; top: -130%; font-size:5vw;
+    }
+    .publishing .swiper-pagination-total{right: 8%;}
+    .publishing .swiper-slide.swiper-slide-active .textBox .details p{
+        width: 80%; 
+    }
+    .publishing .swiper-pagination-fraction{
+        right: 10%; bottom: 33%;
+    }
+    .publishing .swiper-pagination-current{right: 22%;}
+    .publishing .swiper-pagination-total{right: 8%;}
+
+    .ncsProcess{width: 100%;}
+    .ncsProcess .inner{max-width: 95%;}
+    .ncsProcess .inner .leftTit h2 {
+        font-size: 6vw;
+    }
+    .ncsProcess .inner .leftTit h2:after{font-size: 0.9rem; left: 43%;}
+    .ncsProcess .inner .swiper{width: 95%; margin-left: 10px;}
+    .ncsProcess .inner .mySwiper_2 .imgBox{
+        width:300px; height: 190px; transform:scale(0.8);
+    }
+    .ncsProcess .swiper-slide{transform: translateX(-78px);}
+    .ncsProcess .swiper-slide.swiper-slide-active .imgBox{
+        transform: scale(1.0); transition: all 0.5s ease;
+    }
+    .ncsProcess .swiper-slide.swiper-slide-active .textBox p.sans{
+        margin-bottom: 89px;
+    }
+    .ncsProcess .swiper-pagination-fraction {
+        right: -3%;
+    }
+
+    .scroll_container .scrollTxt{font-size:20vw; }
+    .study{width: 100%; height: 200vh;}
+    .study .inner{max-width: 95%;}
+    .study .inner .log{margin-left: -2vw;}
+    .study .inner .log li{width: 48%; margin-left: 17px;}
+    .study .inner .log li:nth-child(2), .study .inner .log li:nth-child(5), .study .inner .log li:nth-child(3n){
+        transform: translateX(0px);
+    }
+
 }
 /* 모바일해상도 767px 이하 */
 @media screen and (max-width: 767px){
@@ -600,6 +656,50 @@
     .main .inner .titBox span{margin-left:0%; }
     .main .inner .txtBox{font-size: 2.5vw; width: 55%; top: 70%; right: 25%;}
     .main .inner .txtBox br.mo{display: none;}
+
+    .publishing{width: 100%;}
+    .publishing .inner{max-width: 95%;
+    }
+    .publishing .inner .leftTit{transform: translateX(-40px);}
+    .publishing .inner .leftTit h2:after{left: 38%; font-size: 0.85rem;}
+    .publishing .inner .leftTit h2{font-size: 8vw;}
+    .publishing .inner .swiper{width: 95%; margin-top: 0px; margin-left: 10px;}
+    .publishing .inner .swiper .swiper-slide.swiper-slide-active .textBox .sTxt{
+        top:-50%; left:-10%; transform: rotate(0deg); font-size: 3vw;
+    }
+    .publishing .inner .swiper .swiper-slide.swiper-slide-active .textBox .bTxt{
+        left: 20%; top: -195%; font-size:8vw;
+    }
+    .publishing .swiper-slide.swiper-slide-active .textBox .details p{
+        width: 70%; margin-left: 10px;
+    }
+    .publishing .inner .swiper .swiper-slide{transform: translateX(100px);}
+    .publishing .swiper-pagination-fraction:before, .publishing .swiper-pagination-fraction:after{
+        right: 13%;
+    }
+    
+    .publishing .swiper-slide.swiper-slide-active .textBox .details p{margin-left: -4px; width: 68%;}
+    .publishing .swiper-pagination-current{right:23%;}
+
+    .ncsProcess{width: 100%;}
+    .ncsProcess .inner{max-width: 95%;}
+    .ncsProcess .inner .leftTit h2{font-size: 8vw; padding-left: 22px;}
+    .ncsProcess .inner .leftTit h2:after{left: 31%; font-size: 0.85rem;}
+    .ncsProcess .swiper-slide{transform: translateX(75px);}
+    .ncsProcess .swiper-slide.swiper-slide-active .textBox p.sans{width: 65%; margin-top: 43px;
+    margin-bottom: 115px;}
+    .ncsProcess .swiper-pagination-fraction{right:14%;}
+    .ncsProcess .swiper-pagination-current{right: 26%;}
+    .ncsProcess .swiper-pagination-fraction:before, .ncsProcess .swiper-pagination-fraction:after {
+    right: 14%;
+    }
+
+    .scroll_container{margin-bottom: 200px;}
+    .study{width: 100%; height: 270vh;}
+    .study .inner{max-width: 95%;}
+    .study .inner .log{margin-left: 4vw;}
+    .study .inner .log li{width: 93%; margin-left: 17px; margin-bottom: 89px;}
+    .study .inner a.cab{margin-left: 35vw; }
 }
 
 
