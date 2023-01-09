@@ -11,52 +11,9 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/slick.css">
     
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script>
-        // menu open
-        $(function(){
-            $(".menuBar button.open").on("click", function(){
-            $(".menuBar .menuOpen").addClass('on');
-        });
-            $(".menuBar .menuOpen .close").on("click", function(){
-            $(".menuBar .menuOpen").removeClass('on');
-        });
-        });
-        //comment slick
-        $(function() {
-            $( '.comment .inner .txtBox .slide' ).slick( {
-                arrows: true,
-                dots:false,
-                autoplay:true,
-                fade:true,
-                autoplaySpeed:5000,
-                pauseOnHover:true,
-                pauseOnFocus:true
-                
-            } );
-        } );
-
-
-         // scroll하면서 글씨 움직이기
-        let scroll = false;
-        let paraTitle = document.querySelectorAll('.para_title');
-        const scrollProgress = () => {
-            scroll = false;
-        }
-        const scroll_txt = () => {
-            if(scroll){
-                paraTitle.forEach((element, index) => {
-                    element.style.transform = "translateX("+ window.scrollY / 10 + "%)"
-                })
-                scroll = false;
-            }
-            requestAnimationFrame(scroll_txt);
-        }
-
-        requestAnimationFrame(scroll_txt)
-        window.addEventListener('scroll', scrollProgress)
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollToPlugin.min.js"></script>
     
 </head>
 <body>
@@ -88,7 +45,7 @@
         <nav class="cab">
             <li><a href="#profile">Profile</a></li>
             <li><a href="#history">History</a></li>
-            <li><a href="#experience">Experience<li>
+            <li><a href="#experience">Experience</a><li>
             <li><a href="#comment">Comment</a></li>
         </nav>
 
@@ -404,21 +361,6 @@
                                 </p>
                             </div>
                         </li>
-                        <li>
-                            <p class="contxt sans">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Fusce nulla justo, porta sit amet ipsum eget,
-                                consequat accumsan magna. Ut rutrum ut risus eu portti
-                            </p>
-                            <div class="commenter">
-                                <div class="imgBox">
-                                    <img src="img/person_1.png" alt="코멘터 1">
-                                </div>
-                                <p class="name sans">
-                                    조소영 <span calss="trait">웹 퍼블리셔</span>
-                                </p>
-                            </div>
-                        </li>
                     </ul>
                 </div>
             </div>
@@ -446,7 +388,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="https://github.com/breeghty" target="_blank">
                                 <img src="img/gitsns.png" alt="깃허브 바로가기">
                                 <img src="img/gitsns_hover.png" alt="깃허브 바로가기">
                             </a>
@@ -499,7 +441,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="https://github.com/breeghty" target="_blank">
                             <img src="img/gitsns.png" alt="깃허브 바로가기">
                         </a>
                     </li>
@@ -515,5 +457,8 @@
         </footer>
     </div>
 
-</body>
+    <!-- js -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/about_script.js"></script>
 </html>

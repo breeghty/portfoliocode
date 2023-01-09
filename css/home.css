@@ -259,7 +259,6 @@ display: inline-block; margin: 0 10px 90px;
 /* section.projects */
 .projects{
     width: 100%; overflow: hidden; 
-    background: #FFD500;
 }
 .projects .inner{
     width: 1660px; margin:0 auto;
