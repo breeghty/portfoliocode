@@ -2,18 +2,6 @@ $(document).on('click', 'a[href="#"]', function(e){
     e.preventDefault();
 });
 
-// //2.슬라이드
-// $(function() {
-//     $(".visual .slide").slick({ //슬릭플러그인 호출
-//         arrows: false, //화살표 사용안함
-//         dots: true, //닷츠
-//         autoplay: true, //자동재생
-//         fade: true, //페이드인 효과        
-//         autoplaySpeed:4000, //재생시간
-//         pauseOnHover:false, //마우스 오버시 슬라이드 멈춤 해제
-//        pauseOnFocus:false //포커스시 슬라이드 멈춤 해제
-//     });
-// }); 
 
 // swiper
 var swiper = new Swiper(".mySwiper", {
@@ -41,7 +29,7 @@ var swiper = new Swiper(".mySwiper", {
 
 
 
-//.3.scroll 애니메이션
+//scroll 애니메이션
 $(function() {
 	$('.animate').scrolla({
 		mobile: true, //모바일버전시 활성화
@@ -204,7 +192,7 @@ gsap.utils.toArray("section").forEach(function(bg){
         trigger: bg,
         start: 'top center',
         end:'bottom center',
-        markers:true,
+        // markers:true,
         scrub:true,
         onEnter:()=> gsap.to(".wrap", {
             backgroundColor: color,

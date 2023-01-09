@@ -258,7 +258,7 @@ display: inline-block; margin: 0 10px 90px;
 
 /* section.projects */
 .projects{
-    width: 100%; overflow: hidden; 
+    width: 100%; overflow: hidden;
 }
 .projects .inner{
     width: 1660px; margin:0 auto;
@@ -319,7 +319,6 @@ display: inline-block; margin: 0 10px 90px;
     margin:30px auto;
     
 }
-
 
 
 /* section_value */
