@@ -285,7 +285,7 @@ display: inline-block; margin: 0 10px 90px;
     width: 90%; margin:0 auto; display: flex; justify-content: space-between;
 }
 .projects .gallery .inner .container .gal{
-    margin-right: 70px;
+    margin-right: 70px;flex-shrink: 0!important;
 }
 .projects .gallery .inner .container .gal:nth-child(2n-1){
     margin-top:30px;

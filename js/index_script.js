@@ -183,6 +183,76 @@ const skill = document.getElementById('skill_title');
         
     });
     
+//project gallery_마우스 오버시 이미지 변경
+$(document).ready(function(){
+    
+    $('.crew').mouseover(function(){
+        $(this).attr('src','img/crewColor.png');
+    }).mouseout(function(){
+        $(this).attr('src','img/crewBlack.png');
+    });
+
+    $('.daebang').mouseover(function(){
+        $(this).attr('src','img/daebangColor.png');
+    }).mouseout(function(){
+        $(this).attr('src','img/daebangBlack.png');
+    });
+
+    $('.musign').mouseover(function(){
+        $(this).attr('src','img/musignColor.png');
+    }).mouseout(function(){
+        $(this).attr('src','img/musignBlack.png');
+    });
+
+    $('.ystudio').mouseover(function(){
+        $(this).attr('src','img/ystudioColor.png');
+    }).mouseout(function(){
+        $(this).attr('src','img/ystudioBlack.png');
+    });
+
+    $('.phomein').mouseover(function(){
+        $(this).attr('src','img/phomeinColor.png');
+    }).mouseout(function(){
+        $(this).attr('src','img/phomeinBlack.png');
+    });
+
+    $('.dopda').mouseover(function(){
+        $(this).attr('src','img/dopdaColor.png');
+    }).mouseout(function(){
+        $(this).attr('src','img/dopdaBlack.png');
+    });
+
+    $('.doctors').mouseover(function(){
+        $(this).attr('src','img/doctorsColor.png');
+    }).mouseout(function(){
+        $(this).attr('src','img/doctorsBlack.png');
+    });
+
+    $('.innere').mouseover(function(){
+        $(this).attr('src','img/innereColor.png');
+    }).mouseout(function(){
+        $(this).attr('src','img/innereBlack.png');
+    });
+
+    $('.hanhwa').mouseover(function(){
+        $(this).attr('src','img/hanhwaColor.png');
+    }).mouseout(function(){
+        $(this).attr('src','img/hanhwaBlack.png');
+    });
+
+    $('.ajou').mouseover(function(){
+        $(this).attr('src','img/ajouColor.png');
+    }).mouseout(function(){
+        $(this).attr('src','img/ajouBlack.png');
+    });
+
+    $('.woosung').mouseover(function(){
+        $(this).attr('src','img/woosungColor.png');
+    }).mouseout(function(){
+        $(this).attr('src','img/woosungBlack.png');
+    });
+
+});
 
 // section project gallery bg color change
 gsap.utils.toArray("section").forEach(function(bg){
@@ -210,6 +280,23 @@ gsap.utils.toArray("section").forEach(function(bg){
         })
     });
 });
+
+// section project gallery 가로스크롤
+gsap.registerPlugin(ScrollTrigger);
+
+let list = gsap.utils.toArray(".container .gal");
+let scrollX = gsap.to(list,{
+    xPercent: -100 * (list.length - 1),
+    ease: "none",
+    scrollTrigger: {
+    trigger: ".container",
+    pin: true,
+    scrub: 1,
+    end: "+=2000",
+    }
+});
+
+
 
 
     // Scroll Trigger
