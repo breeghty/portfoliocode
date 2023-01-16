@@ -63,6 +63,9 @@ nav{
     position:fixed; bottom:5%; left:3%; z-index:100;
     transition: all 0.3s ease;
 }
+nav.notshow{
+    display:none; transition: all 0.3s ease;
+}
 nav li{
     margin-bottom: 5px;
 }
@@ -72,6 +75,9 @@ nav li a{
 }
 nav li a:hover, nav li a:focus, nav li a:active, nav li a.active{
     color:#000;  font-weight: bold;
+}
+nav li:last-child a{
+    opacity:0; cursor: none;
 }
 
 /* responsive web */

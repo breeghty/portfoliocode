@@ -15,7 +15,11 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
-
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollToPlugin.min.js"></script>
+    <!-- <script src="js/gallery_script.js"></script> -->
 
     <script>
         // menu open
@@ -266,7 +270,7 @@
                 </div>
             </div>
         </section>
-        <section class="ncsProcess" id="ncs">
+        <section class="ncsProcess" id="ncs" data-color="#000">
             <div class="inner">
                 <div class="leftTit">
                     <h2 class="bw">NCS Process</h2>
@@ -583,5 +587,31 @@
             }
         }
     });
+
+    gsap.utils.toArray("section").forEach(function(bg){
+    var color = bg.getAttribute('data-color');
+
+    ScrollTrigger.create({
+        trigger: bg,
+        start: 'top center',
+        end:'bottom center',
+        // markers:true,
+        scrub:true,
+        onEnter:()=> gsap.to(".wrap", {
+            backgroundColor: color,
+            duration: 1,
+//onEnter - 스크롤 위치가 '시작'을 지나 앞으로 이동할 때
+        }),
+        onEnterBack: () => gsap.to(".wrap",{
+            backgroundColor:color,
+            duration:1
+        //onEneterBack - 스크롤의 위치가 "끝"을 지나 뒤로 이동할 때.
+        }),
+        onLeaveBack: () => gsap.to(".wrap", {
+            backgroundColor:"#fff",
+            duration:1,
+        })
+    });
+});
 </script>
 </html>

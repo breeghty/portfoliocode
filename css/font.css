@@ -36,8 +36,10 @@ li {list-style: none;}
     font-weight: 800;
 
 }
-@font-face{font-family:book antiqua;
-    src:local('Book Antiqua'),url(../font/Book\ Antiqua\ Bold.ttf) format('truetype'),
+@font-face{
+    font-family: 'Book Antiqua';
+    font-weight: 700;
+    src:url(../font/Book\ Antiqua\ Bold.ttf) format('truetype'),
     url(../font/Book\ Antiqua\ Font.ttf) format('turetype');
 }
 
@@ -49,7 +51,8 @@ li {list-style: none;}
     font-family: 'Noto Sans KR', sans-serif;
 }
 .serif{
-    font-family: 'Noto Serif KR', serif;}
+    font-family: 'Noto Serif KR', serif;
+}
 .bq{
     font-family: 'Book Antiqua', sans-serif;
 }

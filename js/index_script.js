@@ -28,6 +28,10 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 
+// splitting.js
+$(function(){
+    Splitting();
+});
 
 //scroll 애니메이션
 $(function() {
@@ -37,7 +41,7 @@ $(function() {
 	});    
     }); 
 
-//4. 배경색 변경
+//배경색 변경
 // $(window).on('scroll resize', function(){
 //     var scrollTop = 0;
 //     scrollTop = $(document).scrollTop();
@@ -57,8 +61,103 @@ $(function() {
 //     }   
 // });
 
-//menubar menuopen
+// personality
+const first_text = document.querySelector('.first_text');
+const second_text = document.querySelector('.second_text');
+const third_text = document.querySelector('.third_text');
 
+
+const text1 = 'Passionate Growing Receptive Challenging'.split(' ');
+// 문자열을 split 메소드를 이용해 나눠준다. 스페이스바를 기준으로 단어 네개가 나눠지고 text1 배열이 생성된다.
+// text1=['passionate', 'Growing', 'Receptive', 'Challengin']
+const text2 = 'Cooperative Flexible Adaptive Positive'.split(' ');
+const text3 = 'Diligent Calm Voluntary Planning'.split(' ');
+
+// for(let i = 0; i < text1.length ; i++){
+//     console.log(text1[i]);
+// }
+
+function initText(e, array){
+    array.push(...array)
+    array.push(...array)
+    // 스크롤시 단어가 이어지면서 나와야 하므로 ...array를 이용해 배열의 단어를 한 번 더 넣어준다.
+    // console.log(array);
+    for(let i = 0; i<array.length; i++){
+        e.innerText += `${array[i]}\u00A0\u00A0\u00A0\u00A0`;
+    }
+}
+// innerText => 요소 내부의 텍스트를 나타내는 메소드.
+
+initText(first_text, text1);
+initText(second_text, text2);
+initText(third_text, text3);
+
+
+// 전역변수
+let count1 = 0;
+let count2 = 0;
+let count3 = 0;
+
+
+function marqueeText(count, element, dir){
+    if(count > element.scrollWidth / 2){
+        element.style.transform = 'translate3d(0,0,0)';
+        count=0;
+    }
+    element.style.transform = `translate3d(${dir * count}px, 0, 0)`;
+    // x축 방향으로 count * direction 만큼 이동. direction이 양수면 오른쪽, 음수면 왼쪽으로 이동한다.
+    
+    return count
+}
+
+function animate(){
+    // 반응형에 따라 텍스트 애니메이션 속도 다르게 하기.
+    let mediaSize = window.matchMedia('(max-width: 1000px)');
+    if(mediaSize.matches == true){
+        // 1000px이하의 경우
+        count1++;
+        count2++;
+        count3++;
+    } else{
+        count1+=2;
+        count2+=2;
+        count3+=2;
+    }
+
+    // ccount를 통해 속도 조절. count를 계속 up 시키다가 marqueeText 함수를 통해 초기화.
+    //애니메이션 무한 반복.
+
+    count1 = marqueeText(count1, first_text, -1);
+    count2 = marqueeText(count2, second_text, 1);
+    count3 = marqueeText(count3, third_text, -1);
+
+    window.requestAnimationFrame(animate);
+    
+    // 애니메이션의 현재상태를 업데이트하는 메소드.
+}
+
+animate();
+
+function scrollMarquee(){
+
+    let mediaSize = window.matchMedia('(max-width: 1000px)');
+    if(mediaSize.matches == true){
+        count1+=5;
+        count2+=5;
+        count3+=5;
+    } else{
+        count1+=10;
+        count2+=10;
+        count3+=10;
+    }
+}
+
+window.addEventListener('scroll', scrollMarquee);
+
+
+
+
+//menubar menuopen, nav 사라짐
 $(function(){
     $(".menuBar button.open").on("click", function(){
         $(".menuBar .menuOpen").addClass('on');
@@ -69,19 +168,6 @@ $(function(){
         $("nav").css("opacity", 1);
     });
 });
-
-// mainmenu span bar
-// $(function(){
-//     $(".gnb li a").on("mouseenter focus", function(){
-//         var bar = $(this).position().left; //위치값
-//         var width = $(this).width();
-//         $("span.bar").css({'left': bar + 'px', 'width': width +'px', 'opacity':1});
-//     }); 
-//     $(".gnb li a").on("mouseleave", function(){
-//         $("span.bar").css({'left': 0, 'width': 0, 'opacity':0});
-//     });
-// });
-// // https://foodsexer.tistory.com/67
 
 // //svg
 // //길이찾기
@@ -98,11 +184,10 @@ const iconList = document.querySelectorAll(".topList > li, .bottomList > li");
         // alert(iconList.length);
 const skill = document.getElementById('skill_title');
         // alert(iconList[1]); object html element
-
         // 버튼에 마우스를 올릴 때 mouseenter
         for(let i = 0; i< iconList.length; i++){
             iconList[i].querySelector(".btn").addEventListener("mouseenter", function(){
-                for(var j = 0; j < iconList.length; j++){
+                for(let j = 0; j < iconList.length; j++){
                     //on 클래스가 붙었던 li의 on 클래스를 모두 지워준다.
                     iconList[j].classList.remove('on');
                 }
@@ -111,7 +196,7 @@ const skill = document.getElementById('skill_title');
                 skill.style.opacity=0;
                 //a태그의 부모노드인 li에 클래스 on을 붙인다.
             });
-        } 
+        }
         // 버튼에 focus 할때
         for(let i = 0; i< iconList.length; i++){
             iconList[i].querySelector(".btn").addEventListener("focus", function(){
@@ -254,8 +339,8 @@ $(document).ready(function(){
 
 });
 
-// section project gallery bg color change
-gsap.utils.toArray("section").forEach(function(bg){
+// class bgc => bg color change
+gsap.utils.toArray(".container").forEach(function(bg){
     var color = bg.getAttribute('data-color');
 
     ScrollTrigger.create({
@@ -271,15 +356,17 @@ gsap.utils.toArray("section").forEach(function(bg){
         }),
         onEnterBack: () => gsap.to(".wrap",{
             backgroundColor:color,
-            duration:1 
+            duration:1,
         //onEneterBack - 스크롤의 위치가 "끝"을 지나 뒤로 이동할 때.
         }),
         onLeaveBack: () => gsap.to(".wrap", {
-            backgroundColor:'#d14244',
+            backgroundColor:"#fff",
             duration:1,
-        })
+        }),
     });
 });
+
+
 
 // section project gallery 가로스크롤
 gsap.registerPlugin(ScrollTrigger);
@@ -292,14 +379,12 @@ let scrollX = gsap.to(list,{
     trigger: ".container",
     pin: true,
     scrub: 1,
-    end: "+=2000",
+    end: "+=1500",
     }
 });
 
 
-
-
-    // Scroll Trigger
+// Scroll Trigger
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 // nav 내비게이션 스크롤 이동과 a에 active 클래스 주기
@@ -319,6 +404,7 @@ links.forEach(a => {
         end:'bottom center',
         onToggle: self => self.isActive && setActive(a)
     });
+    // function
 });
 
 /* onToggle: 스크롤의 위치가 어느방향으로든 '시작'또는 '종료'를 지나 이동할 때 
@@ -334,13 +420,33 @@ links.forEach(a => {
 a.addEvenListener("click", e => {
     e.preventDefault();
     gsap.to(window, {duration:0.8, scrollTo: linkST.start});
+    // function
 });
 //DOM(document Object Model)객체, addEventListener(이벤트명, 실행할 함수, 옵션);
 
 function setActive(link){
+    const navList = document.querySelector(".nav");
     //nav a에 스크롤 위치에 따라 혹은 클릭했을 때 active클래스를 붙여주는 함수.
     links.forEach(a => a.classList.remove("active"));
     link.classList.add("active");
+
+    // nav가 보이지 않게 하는 코드
+    if((link.classList.contains('active')) && (link.classList.contains('invisible'))){
+        // alert("푸터입니다.");
+        navList.classList.add("notshow");
+    }
+    else{
+        navList.classList.remove("notshow");
+    }
+
 }
+
+
+
+
+
+
+
+
 
 

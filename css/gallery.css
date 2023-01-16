@@ -186,7 +186,7 @@
 /* section ncs */
 .ncsProcess{
     width: 100%; overflow: hidden; height: 900px; margin-bottom:80px;
-    background: #000; color:#fff;
+    color:#fff;
 }
 .ncsProcess .inner{
     width: 1660px; margin:20px auto 0;  margin-top: 150px; display: flex;
@@ -560,10 +560,11 @@
     }
     .ncsProcess .swiper-pagination-fraction{right:3%;}
     
+    
+    /* study */
     .scroll_container .scrollTxt{
         font-size: 182px;
     }
-    /* study */
     .study{width: 100%;}
     .study .inner {
         max-width: 95%;
@@ -634,8 +635,9 @@
         right: -3%;
     }
 
-    .scroll_container .scrollTxt{font-size:20vw; }
+    
     .study{width: 100%; height: 200vh;}
+    .scroll_container .scrollTxt{font-size:20vw; }
     .study .inner{max-width: 95%;}
     .study .inner .log{margin-left: -2vw;}
     .study .inner .log li{width: 48%; margin-left: 17px;}
@@ -694,8 +696,9 @@
     right: 14%;
     }
 
-    .scroll_container{margin-bottom: 200px;}
+    
     .study{width: 100%; height: 270vh;}
+    .scroll_container{margin-bottom: 200px;}
     .study .inner{max-width: 95%;}
     .study .inner .log{margin-left: 4vw;}
     .study .inner .log li{width: 93%; margin-left: 17px; margin-bottom: 89px;}
