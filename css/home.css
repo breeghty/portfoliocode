@@ -3,11 +3,6 @@
 @import url('https://fonts.cdnfonts.com/css/cabinet-grotesk');
 
 
-
-/* .wrap.change{
-    background: #ffd500;
-} */
-
 /* section.main */
 .main{
     width: 100%; overflow: hidden; height: 100vh;
@@ -21,6 +16,7 @@
 .main .inner h3{
     font-size:33px; text-align: center; font-weight: 500; margin-bottom: 40px;
 }
+
 .main .inner h2{
     font-size:160px; line-height:1.1; font-weight: 500;text-align: center;
 }
@@ -74,6 +70,27 @@ display: inline-block; margin: 0 10px 90px;
     }
 }
 
+
+
+/* main_animation 효과 */
+.main .inner h3 .char{
+    display: inline-block;
+    animation: slide-up 0.4s cubic-bezier(.5, 0, .5, 1) both;
+    animation-delay: calc(60ms * var(--char-index));
+}
+@keyframes slide-up {
+    0%{
+        transform: translateY(30px);
+        opacity:0;
+    }
+    30%{
+        transform: translateY(30px);
+        opacity:0;
+    }
+}
+
+
+
 /* section_about */
 .about{
     width: 100%; overflow: hidden;
@@ -82,16 +99,32 @@ display: inline-block; margin: 0 10px 90px;
 .about .inner{
     width: 1660px; margin:0 auto;
 }
+
 .about .inner .titBox h2.bw{
     font-size:65px; font-weight: 500; text-align: center; margin-bottom: 10px;
 }
-.about .inner .titBox h2 span{
+.about .inner .titBox h2 span.bq{
     transform:translate(-70px,0);
 }
 .about .inner .titBox h3.serif{
     text-align: center; font-size: 18px;
 }
-/*about 제목 */
+
+
+/* animation -motion 
+@keyframes fadeIn {
+    0%{opacity:0; transform:translate(0,-100px);}
+    100%{opacity:1; transform:translate(0,0px);}
+}
+
+.about .profile .inner.motion .titBox{
+    animation: fadeIn 0.8s ease-in-out;
+}
+.about .profile .inner.motion .txtBox{
+    animation: fadeIn 1s ease-in-out;
+} */
+
+
 .about .profile .inner .titBox{
     text-align:right; padding: 25px 0; 
     box-sizing: border-box; margin-right: 200px; margin-bottom: 25px;
@@ -100,11 +133,11 @@ display: inline-block; margin: 0 10px 90px;
     font-size: 88px; font-weight: 500;
 }
 
-.about .profile .inner .titBox span{
+.about .profile .inner .titBox span.bq{
     display: inline-block; color:transparent; font-weight: 700;
     position:relative; white-space: nowrap;
 }
-.about .profile .inner .titBox span:after{
+.about .profile .inner .titBox span.bq:after{
     content:'JO SO YOUNG'; position:absolute; -webkit-text-stroke: 1px #000;
     top:0; left:10%; border-right: 1px solid #000; width: 100%; height: 100%;
     animation: typing 6s steps(45) infinite; overflow: hidden; 
@@ -122,6 +155,14 @@ display: inline-block; margin: 0 10px 90px;
         width:0%;
     }
 }
+
+/* animation */
+.about .profile .inner.motion .titBox h2:nth-child(1) .char{
+    display: inline-block;
+    animation: slide-up 0.5s cubic-bezier(.5, 0, .5, 1) both;
+    animation-delay: calc(60ms * var(--char-index));
+}
+
 
 .about .profile .inner .profileImg{
     width: 40%; transform:translate(35%,-5%); float:left;
@@ -182,7 +223,7 @@ display: inline-block; margin: 0 10px 90px;
 
 }
 .skills .inner{
-    width: 1660px; margin: 0 auto; padding: 125px 30px; box-sizing: border-box;
+    width: 1660px; margin: 0 auto; padding: 95px 30px; box-sizing: border-box;
     height:900px;
 }
 .about .skills .inner .icon_skill{
@@ -192,7 +233,7 @@ display: inline-block; margin: 0 10px 90px;
     width: 100%;  position: relative;
 }
 .iconTab .topList, .iconTab .bottomList{
-    width: 70%; margin: 0 auto;
+    width: 65%; margin: 0 auto;
     display: flex; justify-content: space-between;
 }
 .iconTab .topList li,  .iconTab .bottomList li{
@@ -242,6 +283,19 @@ display: inline-block; margin: 0 10px 90px;
     }
     
 }
+
+/* hover효과 */
+.iconTab .topList li a img:hover,  .iconTab .bottomList li a img:hover{
+    transform: scale(1.2); transition: all 0.5s ease;
+}
+/* animation */
+.skills .titBox.motion .tit .char{
+    display: inline-block;
+    animation: slide-up 0.5s cubic-bezier(.5, 0, .5, 1) both;
+    animation-delay: calc(60ms * var(--char-index));
+}
+
+
 
 /* personality_marquee_text */
 .personality{
@@ -310,6 +364,14 @@ display: inline-block; margin: 0 10px 90px;
 }
 .projects .gallery .inner .container_2{display: none;}
 
+
+
+/* animation */
+.projects .gallery.motion .galTit h2.bw .char{
+    display: inline-block;
+    animation: slide-up 0.3s cubic-bezier(.5, 0, .5, 1) both;
+    animation-delay: calc(60ms * var(--char-index));
+}
 /* ncs */
 .projects .ncs{
     margin:200px 0 100px;
@@ -319,9 +381,7 @@ display: inline-block; margin: 0 10px 90px;
     font-size:65px; font-weight: 500; text-align: center; margin-bottom: 10px;
     text-align: right; transform: translateX(-150PX);
 }
-.projects .ncs .inner .ncsTit h2 span{
-    margin-right:12px;
-}
+
 .projects .ncs .inner .ncsTit h3.serif{
     text-align: center; font-size: 18px; transform: translate(70px,52px);
 }
@@ -332,15 +392,25 @@ display: inline-block; margin: 0 10px 90px;
     margin:30px auto;
 }
 
+/* animation */
+.projects .ncs .inner.motion .ncsTit h2 .char{
+    display: inline-block;
+    animation: slide-up 0.3s cubic-bezier(.5, 0, .5, 1) both;
+    animation-delay: calc(60ms * var(--char-index));
+}
+
 /* section.study */
 .study{
-    width: 100%; overflow: hidden; height: 1800px;
+    width: 100%; overflow: hidden; height: 1700px;
     padding: 100px 0; box-sizing: border-box;
     background: #fff;
 }
 .scroll_container{
     width: 100%; margin-bottom: 280px;
 }
+
+
+
 .scroll_container .scrollTxt{
     font-size: 200px; font-weight: 800; -webkit-text-stroke: 1px #000;
     color:transparent;
@@ -353,7 +423,7 @@ display: inline-block; margin: 0 10px 90px;
     width: 1660px; margin:20px auto 0px; 
 }
 .study .inner .log{
-    display: flex; flex-wrap: wrap; margin-left: 98px;
+    display: flex; flex-wrap: wrap; margin-left: 25px;
 }
 .study .inner .log li{
     width: 30%; height: 240px; 
@@ -361,9 +431,8 @@ display: inline-block; margin: 0 10px 90px;
 }
 .study .inner .log li a{
     color:#fff; background: #000; display: block; 
-    width: 60%; height: 70%; margin-left: 40px;
+    width: 80%; height: 70%; margin-left: 40px;
     font-weight: 400; padding: 30px; border-radius: 40px;
-    box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
     position: relative; transition:0.3s ease;
 }
 .study .inner .log li a:after{
@@ -392,6 +461,47 @@ display: inline-block; margin: 0 10px 90px;
 .study .inner a.cab:hover, .study .inner a.cab:focus{
     background: #ffd500; color:#000; transition: all 0.2s ease;
     box-shadow:3px 3px 5px rgba(0,0,0, 0.2);
+}
+
+/* animation */
+.scroll_container.motion .text_left{
+    animation: text_left 0.5s ease-in-out;
+}
+.scroll_container.motion .text_right{
+    animation: text_right 0.5s ease-in-out;
+}
+@keyframes text_left {
+    0%{
+        transform: translateX(-250px);
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        
+    }
+}
+@keyframes text_right {
+    0%{
+        transform: translateX(250px);
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        
+    }
+}
+
+.study .inner .log.motion li{animation:slideDown 0.5s ease-in-out; }
+
+@keyframes slideDown {
+
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 /* reponsive web */

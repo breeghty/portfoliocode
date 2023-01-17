@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/animate.min.css">
 
+    <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/scrolla.jquery.min.js"></script>
     <script src="js/splitting.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
@@ -59,7 +60,7 @@
         <section class="main" id="main">
             <div class="inner">
                 <div class="mainTitBox serif">
-                    <h3>HELLO!</h3>
+                    <h3 data-splitting>HELLO!</h3>
                     <h2>WELCOME TO</h2>
                     <h2><span class="bq">SOYOUNG</span><img src="img/comma_1.png" alt="어코스트로피">s</h2>
                     <h2>PORTFOLIO</h2>
@@ -85,9 +86,9 @@
         <!-- about -->
         <section class="about" id="about">
             <div class="profile">
-                <div class="inner">
+                <div class="inner animate" data-animate="motion">
                     <div class="titBox bw">
-                        <h2>HELLO!</h2>
+                        <h2 data-splitting>HELLO!</h2>
                         <h2>I'm</h2>
                         <h2><span class="bq">JO SO YOUNG</span></h2>
                     </div>
@@ -150,8 +151,8 @@
                                 <div class="cont num" id="tab6">0</div>
                             </li>
                         </ul>
-                        <div class="titBox">
-                            <h2 class="tit bw" id="skill_title">Skill</h2>
+                        <div class="titBox animate" data-animate="motion">
+                            <h2 class="tit bw" id="skill_title" data-splitting>Skill</h2>
                         </div>
                         <ul class="bottomList">
                             <li>
@@ -262,66 +263,66 @@
             </div>
         </section>
         <section class="projects" id="project_gallery" >
-            <div class="gallery">
+            <div class="gallery animate" data-animate="motion">
                 <div class="inner">
                     <div class="galTit">
-                        <h2 class="bw">Project <span class="bw">Gallery</span></h2>
+                        <h2 class="bw" data-splitting>Project <span class="bw">Gallery</span></h2>
                         <h3 class="serif">제가 만든 작업물들을 소개합니다.</h3>
                     </div>
                     <!-- 가로 스크롤 -->
                     <div class="container" data-color="#ffd500">
                         <div class="gal a">
-                            <a href="coding/crewwalamode_coding/index.html" target="_blank">
+                            <a href="clonecoding_crewalamode.html" target="_blank">
                                 <img src="img/crewBlack.png" alt="클론코딩 클로라모드" class="crew">
                             </a>
                         </div>
                         <div class="gal b">
-                            <a href="coding/daebang_coding/index.html" target="_blank">
+                            <a href="clonecoding_daebang.html" target="_blank">
                                 <img src="img/daebangBlack.png" alt="클론코딩 대방" class="daebang">
                             </a>
                         </div>
                         <div class="gal c">
-                            <a href="coding/musign_coding/index.html" target="_blank">
+                            <a href="clonecoding_musign.html" target="_blank">
                                 <img src="img/musignBlack.png" alt="클론코딩 뮤자인" class="musign">
                             </a>
                         </div>
                         <div class="gal a" >
-                            <a href="coding/ystudio_coding/index.html" target="_blank">
+                            <a href="clonecoding_ystudio.html" target="_blank">
                                 <img src="img/ystudioBlack.png" alt="클론코딩 ystudio" class="ystudio">
                             </a>
                         </div>
                         <div class="gal c" >
-                            <a href="coding/phomein_coding/index.html" target="_blank">
+                            <a href="clonecoding_phomein.html" target="_blank">
                                 <img src="img/phomeinBlack.png" alt="클론코딩 포메인" class="phomein">
                             </a>
                         </div>
                         <div class="gal b" >
-                            <a href="coding/dopda_coding/index.html" target="_blank">
+                            <a href="clonecoding_dopda.html" target="_blank">
                                 <img src="img/dopdaBlack.png" alt="클론코딩 돕다" class="dopda">
                             </a>
                         </div>
                         <div class="gal c">
-                            <a href="coding/doctors_coding/index.html" target="_blank">
+                            <a href="clonecoding_doctors.html" target="_blank">
                                 <img src="img/doctorsBlack.png" alt="클론코딩 가로수길 닥터스" class="doctors">
                             </a>
                         </div>
                         <div class="gal a" >
-                            <a href="coding/innere_coding/index.html" target="_blank">
+                            <a href="clonecoding_innere.html" target="_blank">
                                 <img src="img/innereBlack.png" alt="클론코딩 이너르" class="innere">
                             </a>
                         </div>
                         <div class="gal b" >
-                            <a href="coding/hanhwa_coding/index.html" target="_blank">
+                            <a href="clonecoding_hanhwa.html" target="_blank">
                                 <img src="img/hanhwaBlack.png" alt="클론코딩 한화케미컬" class="hanhwa">
                             </a>
                         </div>
                         <div class="gal a">
-                            <a href="coding/ajouUnivHospital_renewal/index.html" target="_blank">
+                            <a href="siterenewal_ajouHospital.html" target="_blank">
                                 <img src="img/ajouBlack.png" alt="사이트 리뉴얼 아주대학교병원" class="ajou">
                             </a>
                         </div>
                         <div class="gal c">
-                            <a href="coding/woosung_coding/index.html" target="_blank">
+                            <a href="clonecoding_woosung.html" target="_blank">
                                 <img src="img/woosungBlack.png" alt="클론코딩 우성사료" class="woosung">
                             </a>
                         </div>
@@ -331,77 +332,77 @@
                     <div class="container_2">
                         <ul class="galList">
                             <li>   
-                                <a href="#">
+                                <a href="clonecoding_crewalamode.html" target="_blank">
                                     <div class="imgBox">
                                         <img src="img/crewalamode.png" alt="클로라모드">
                                     </div>
                                 </a>
                             </li>
                             <li>   
-                                <a href="#">
+                                <a href="clonecoding_daebang.html" target="_blank">
                                     <div class="imgBox">
                                         <img src="img/daebang.png" alt="대방건설">
                                     </div>
                                 </a>
                             </li>
                             <li>   
-                                <a href="#">
+                                <a href="clonecoding_musign.html" target="_blank">
                                     <div class="imgBox">
-                                        <img src="img/musign.png" alt="뮤자인">
+                                        <img src="img/musign.png" alt="클론코딩 뮤자인">
                                     </div>
                                 </a>
                             </li>
                             <li>   
-                                <a href="#">
+                                <a href="clonecoding_ystudio.html" target="_blank">
                                     <div class="imgBox">
                                         <img src="img/ystudio.png" alt="와이스튜디오">
                                     </div>
                                 </a>
                             </li>
                             <li>   
-                                <a href="#">
+                                <a href="clonecoding_phomein.html" target="_blank">
                                     <div class="imgBox">
                                         <img src="img/phomein.png" alt="포메인">
                                     </div>
                                 </a>
                             </li>
                             <li>   
-                                <a href="#">
+                                <a href="clonecoding_dopda.html" target="_blank">
                                     <div class="imgBox">
                                         <img src="img/dopda.png" alt="돕다">
                                     </div>
                                 </a>
                             </li>
                             <li>   
-                                <a href="#">
+                                <a href="clonecoding_doctors.html" target="_blank">
                                     <div class="imgBox">
                                         <img src="img/doctors.png" alt="가로수길 닥터스 피부과">
                                     </div>
                                 </a>
                             </li>
                             <li>   
-                                <a href="#">
+                                <a href="clonecoding_innere.html" target="_blank">
                                     <div class="imgBox">
                                         <img src="img/innere.png" alt="이너르">
                                     </div>
                                 </a>
                             </li>
                             <li>   
-                                <a href="#">
+                                <a href="clonecoding_hanhwa.html" target="_blank">
                                     <div class="imgBox">
                                         <img src="img/hanhwa.png" alt="한화케미칼">
                                     </div>
                                 </a>
                             </li>
                             <li>   
-                                <a href="#">
+                                <a href="siterenewal_ajouHospital.html" target="_blank">
                                     <div class="imgBox">
                                         <img src="img/ajou.png" alt="아주대병원">
                                     </div>
                                 </a>
                             </li>
                             <li>   
-                                <a href="#">
+                                <a href="clonecoding_woosung.html" target="_blank">
                                     <div class="imgBox">
                                         <img src="img/woosung.png" alt="우성사료">
                                     </div>
@@ -412,10 +413,10 @@
                 </div>
             </div>
             <div class="ncs">
-                <div class="inner">
+                <div class="inner animate" data-animate="motion">
                     <div class="ncsTit">
                         <h3 class="serif">저의 NCS 교육훈련 과정을 소개합니다.</h3>
-                        <h2 class="bw"><span class="bw">NCS</span>Process</h2>
+                        <h2 class="bw" data-splitting>NCS <span class="bw">Process</span></h2>
                         <!-- swiper -->
                         <div class="swiper mySwiper">
                             <div class="swiper-wrapper">
@@ -454,16 +455,15 @@
             </div>
         </section>
         <section class="study" id="study">
-            <div class="scroll_container">
-                <div class="scrollTxt bq fourth_text">Daily Self</div>
-                <div class="scrollTxt bq fifth_text">Study Log</div>
+            <div class="scroll_container animate" data-animate="motion">
+                <div class="scrollTxt bq text_left" data-splitting>Daily Self</div>
+                <div class="scrollTxt bq text_right">Study Log</div>
             </div>
             <div class="inner">
-                <ul class="log sans">
+                <ul class="log sans animate" data-animate="motion">
                     <li>
-                        <a href="#" onclick='window.open("https://breeghty.github.io/todolist_react/","todolist_react","width=1000")'>
+                        <a href="#" onclick='window.open("https://breeghty.github.io/todolist_react/","todolist_react","width=700")'>
                             <h3 class="tit">React.js 할 일 앱 만들기</h3>
-                        </a>
                         </a>
                     </li>
                     <li>
@@ -531,15 +531,14 @@
                             </a>
                         </li>
                     </ul>
-                    <div class="center">
-                        <h3 class="cab">Let's get in touch!</h3>
+                    <div class="center animate" data-animate="motion">
+                        <h3 class="cab" data-splitting>Let's get in touch!</h3>
                         <p class="sans">함께 나누고 싶은 이야기가 있으시다면!</p>
                         <div class="path">
-                            <svg class="arrow" version="1.1" id="레이어_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-                                y="0px" viewBox="0 0 291 132" style="enable-background:new 0 0 291 132;" xml:space="preserve">
-                                <path class="st0" d="M20.1,68.53c0,0,34.98,15.38,58.96,12.1c0,0,83.47-2.99,80.85-50.56c0,0-7.91-19.08-47.08-7.55
-                                    c0,0-34.24,7.64-40.75,35.85c0,0-5.24,35.63,42.13,46.53c0,0,38.81,12.22,98.22,9.18c0,0,45.34-2.39,64.85-8.53l-16.24-7.94"/>
-                                <line class="st0" x1="277.28" y1="105.54" x2="272.6" y2="122.28"/>
+                            <svg class="arrow" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 43.1 85.9" style="enable-background:new 0 0 43.1 85.9;" xml:space="preserve">
+                                <path stroke-linecap="round" stroke-linejoin="round" class="st0 draw-arrow" d="M11.3,2.5c-5.8,5-8.7,12.7-9,20.3s2,15.1,5.3,22c6.7,14,18,25.8,31.7,33.1" />
+                                <path stroke-linecap="round" stroke-linejoin="round" class="draw-arrow tail-1" d="M40.6,78.1C39,71.3,37.2,64.6,35.2,58" />
+                                <path stroke-linecap="round" stroke-linejoin="round" class="draw-arrow tail-2" d="M39.8,78.5c-7.2,1.7-14.3,3.3-21.5,4.9" />
                             </svg>
                         </div>
                         <div class="e_mail">
@@ -590,7 +589,18 @@
     </div>
 
     <!-- script -->
-    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- <script>
+        // footer svg
+// 길이찾기
+$(function() {
+    $('footer .arrow').find('path').each(function( i, path ) {  
+        let length = path.getTotalLength();
+        alert(length);
+    });
+});
+
+    </script> -->
+    
     <script src="js/swiper-bundle.min.js"></script>
     <script defer src="js/index_script.js"></script>
     

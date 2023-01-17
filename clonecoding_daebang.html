@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Gallery 02. DaeBang</title>
+    <!--타이틀 아이콘-->
+    <link rel="smile icon" href="../img/main_smile.png">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/subgallery.css">
+
+    <script src="js/subgallery_script.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+
+
+    <script>
+        // menu open
+        $(function(){
+            $(".menuBar button.open").on("click", function(){
+            $(".menuBar .menuOpen").addClass('on');
+        });
+            $(".menuBar .menuOpen .close").on("click", function(){
+            $(".menuBar .menuOpen").removeClass('on');
+        });
+        });
+
+        
+    
+    </script>
+</head>
+<body>
+    <div class="wrap">
+        <!-- header -->
+        <header>
+            <div class="innerHeader">
+                <h1 class="logo">
+                    <a href="index.html">
+                        <img src="img/logo_1.png" alt="로고입니다. 클릭시 홈으로">
+                    </a>
+                </h1>
+                <div class="menuBar">
+                    <button class="open" type="button">
+                        <img src="img/menu.png" alt="메뉴오픈">
+                    </button>
+                    <div class="menuOpen">
+                        <a href="#" class="close"><img src="img/close.png" alt="닫기버튼"></a>
+                        <ul class="gnb cab">
+                            <li><a href="index.html">Home</a><span>홈으로 가기</span></li>
+                            <li><a href="about.html">About</a><span>저를 소개하는 페이지입니다.</span></li>
+                            <li><a href="gallery.html">Project Gallery</a><span>저의 작업물들을 모아둔 페이지입니다.</span></li>
+                            <li><a href="portfolio.html">Portfolio Process</a><span>포트폴리오를 만드는 과정을 담았습니다.</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- fixnav -->
+        <nav class="nav cab">
+            <li><a href="#">Github Code</a></li>
+            <li><a href="#">Code Explanation</a></li>
+            <li><a href="#contact" class="invisible">footer</a></li>
+        </nav>
+        <!-- main -->
+        <main >
+            <a href="#" class="serif prev">← PREV</a>
+            <a href="#" class="serif next">NEXT →</a>
+            
+            <div class="inner">
+                <div class="imgBox">
+                    <img src="img/daebang_visual.png" alt="대방 비주얼 영역">
+                    
+                </div>
+                <div class="textBox">
+                    <h2 class="serif tit">
+                        <span>.02</span>
+                        DaeBang
+                    </h2>
+                    <h3 class="serif">Clone Coding</h3>
+                    <ul class="btn cab">
+                        <li>
+                            <p class="more"><a href="#" onclick="window.open('daebang_coding/index.html', '_blank','width=1420 height=1080')">PC</a></p>
+                        </li>
+                        <!-- <li>
+                            <p class="more"><a href="#" onclick="window.open('responsive.html', '_blank','width=768 height=1080')">Tablet</a></p>
+                        </li>
+                        <li>
+                            <p class="more"><a href="#" onclick="window.open('responsive.html', '_blank','width=480 height=1080')">Mobile</a></p>
+                        </li> -->
+                    </ul>
+                    <ul class="point">
+                        <li class="serif">POINT</li>
+                        <li class="sans">splitting.js를 이용한 텍스트 애니메이션</li>
+                        <li class="sans">Dropdown 메뉴 구현하기</li>
+                        <li class="sans">css 애니메이션 효과 연습</li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+        <!-- fullpage -->
+        <section class="full">
+            <div class="inner">
+                <h2 class="serif">Fullpage</h2>
+                <div class="mockupImg">
+                    <img src="img/daebang_mockup.png" alt="대방건설 목업">
+                </div>
+                <div class="fullImg">
+                    <img src="img/full_daebang.png" alt="대방건설 풀페이지">
+                </div>
+            </div>
+        </section>
+        <footer id="contact">
+            <div class="visit">
+                <h2 class="cab">
+                    THANK YOU FOR YOUR VISIT!
+                </h2>
+                <a href="portfolio.html" class="cab">
+                    Portfolio Process →
+                    <!-- <img src="img/portfolio.png" alt="포트폴리오 프로세스 바로가기"> -->
+                </a>
+            </div>
+            <div class="contact">
+                <div class="inner">
+                    <h1 class="logo">
+                        <img src="img/logo_2.png" alt="soyoung 로고">
+                    </h1>
+                    <ul class="sns">
+                        <li>
+                            <a href="https://blog.naver.com/whthdud4356" target="_blank">
+                                <img src="img/blog.png" alt="네이버 블로그 바로가기">
+                                <img src="img/blog_hover.png" alt="네이버블로그 바로가기">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/breeghty" target="_blank">
+                                <img src="img/gitsns.png" alt="깃허브 바로가기">
+                                <img src="img/gitsns_hover.png" alt="깃허브 바로가기">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://liz52hz0322.tistory.com/" target="_blank">
+                                <img src="img/tistory.png" alt="티스토리 바로가기">
+                                <img src="img/tistory_hover.png" alt="티스토리 바로가기">
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="center">
+                        <h3 class="cab">Let's get in touch!</h3>
+                        <p class="sans">함께 나누고 싶은 이야기가 있으시다면!</p>
+                        <div class="path">
+                            <svg class="arrow" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 43.1 85.9" style="enable-background:new 0 0 43.1 85.9;" xml:space="preserve">
+                                <path stroke-linecap="round" stroke-linejoin="round" class="st0 draw-arrow" d="M11.3,2.5c-5.8,5-8.7,12.7-9,20.3s2,15.1,5.3,22c6.7,14,18,25.8,31.7,33.1" />
+                                <path stroke-linecap="round" stroke-linejoin="round" class="draw-arrow tail-1" d="M40.6,78.1C39,71.3,37.2,64.6,35.2,58" />
+                                <path stroke-linecap="round" stroke-linejoin="round" class="draw-arrow tail-2" d="M39.8,78.5c-7.2,1.7-14.3,3.3-21.5,4.9" />
+                            </svg>
+                        </div>
+                        <div class="e_mail">
+                            <a href="#">
+                                <!-- <img src="img/touch.png" alt="마우스를 올려놓을 시 이메일이 표시됩니다."> -->
+                                <p class="cab">whthdud4356 <br>@naver.com</p>
+                            </a>
+                        </div>
+                        <a href="#" class="sans">
+                            이력서 열람하기 <span>→</span>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="footerbottom">
+                <img class="contactImg" src="img/contact.png" alt="contact">
+                <p class="cab">ⓒ 2022 SOYOUNG</p>
+            </div>
+            <!-- tablet, mobile -->
+            <div class="contact_2">
+                <h2 class="e_mail_2 cab">
+                    <a href="#">whthdud4356@naver.com</a>
+                </h2>
+                <ul class="sns_list">
+                    <li>
+                        <a href="#">
+                            <img src="img/blog.png" alt="네이버 블로그 바로가기">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/breeghty" target="_blank">
+                            <img src="img/gitsns.png" alt="깃허브 바로가기">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/tistory.png" alt="티스토리 바로가기">
+                        </a>
+                    </li>
+                </ul>
+                <a href="#" class="apply sans">이력서 열람하기<span>→</span></a>
+                <p class="cab">ⓒ 2022 SOYOUNG</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

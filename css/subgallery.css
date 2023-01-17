@@ -1,67 +1,72 @@
 @charset "utf-8";
+/* codemenu */
 
-main{
-    width: 100%; overflow: hidden; height: 100vh;
-    margin-bottom: 150px; position: relative;;
+
+.wrap{
+    scroll-behavior: smooth;
 }
-main .bg{
-    width: 100%; height:100vh;  position:relative;
-}
+
+
 /* main .bg:after{
     content:''; position:absolute; background: #000; width:100%; height: 550px;
     bottom:25%; left:0;
 } */
-main .bg img{
-    width: 100%; opacity:0.2; display: block;
-    height:100vh;
+
+nav li a{
+    color:#000;
 }
 main .prev{
-    position:absolute; top:45%; left:1%; z-index: 10; color:#000;
-    font-size: 22px; font-weight: 500;
+    position:absolute; top:50%; left:1%; z-index: 10; color:#000;
+    font-size: 18px; font-weight: 500;
 }
 main .next{
-    position:absolute; top: 45%; right:1%; z-index:10;color:#000;
-    font-size: 22px;font-weight: 500;
+    position:absolute; top: 50%; right:1%; z-index:10;color:#000;
+    font-size: 18px;font-weight: 500;
 }
 main .prev:hover, main .next:hover, main .prev:focus, main .next:focus{
-    font-style: italic; text-decoration: underline; transition: all 0.5s ease;
+    font-style: italic; transition: all 0.5s ease;
 }
+
+
 main .inner{
-    width: 100%; margin:20px auto 0;  margin-top: 130px; display: flex;
+    width: 98%; margin: 100px auto; height: 80vh; display: flex;
     justify-content: space-around;
-    position:absolute; top:-30%; left:0%; 
 }
 main .inner .imgBox{
-    width: 1600px; height: 1100px;
-    transform:translate(-150px, 10px);
+    width: 60%; height: 65vh;
+    transform:translate(80px,50px);  
 }
 main .inner .imgBox img{
     width: 100%; height: 100%;
 }
+
+
+
 main .inner .textBox{
-    position:absolute; top:30%; right:15%; width: 25%;
+    width: 20%; margin-top: 95px; margin-right: 150px;
 }
 main .inner .textBox h2{
-    font-size: 65px; font-weight: 800;text-align:right;
+    font-size: 43px; font-weight: 800;text-align:right;
 }
 main .inner .textBox h2 span{
     display: block; 
 }
 main .inner .textBox h3{
-    color:#787878; font-size: 20px; font-weight: 400;
-    text-align:right; margin-bottom: 5vw;
+    color:#787878; font-size: 18px; font-weight: 400;
+    text-align:right; margin-bottom: 10vw;
 }
 main .inner .textBox .btn{
     display: flex; justify-content: space-between;
-    margin-bottom: 5vw; color:#000; 
+    margin-bottom: 2vw; color:#000; 
     
 }
 main .inner .textBox .btn li{
-    padding: 10px 40px; box-sizing: border-box; background: #000;
+    padding: 6px 25px; box-sizing: border-box; background: #000;
     border-radius: 12px;
 }
 main .inner .textBox .btn li a{
     display: block; width: 100%; height: 100%;color:#fff;
+    font-size: 15px;
 }
 main .inner .textBox .btn li:hover, main .inner .textBox .btn li:focus{
     box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
@@ -71,35 +76,47 @@ main .inner .textBox .point{
     color:#000;
 }
 main .inner .textBox .point li{
-    font-size:18px; font-weight: 400; margin-bottom: 0.5vw;
+    font-size:16px; font-weight: 400; margin-bottom: 3px;
 }
 main .inner .textBox .point li:nth-child(1){
-    font-size:30px; font-weight: 800;
+    font-size:30px; font-weight: 800; margin-bottom: 10px;
 }
 
 /* section fullpage */
 .full{
     width: 100%; margin-bottom: 150px;
+    
 }
 .full .inner{
     width: 1660px; margin:0 auto;
 }
 .full .inner h2{
-    font-size: 2vw; font-weight: 800;
+    font-size: 2.5vw; 
     padding-left: 200px;
 }
 .full .mockupImg{
     width: 100%; margin: 0 auto;
+    
+    
 }
 .full .mockupImg img{
     width: 100%; transform: translateY(-100px); display: block;
+    transform: scale(1.5); 
+    
 }
 .full .fullImg{
     width: 100%; margin:0 auto;
 }
 .full .fullImg img{
-    width: 50%; display: block; margin:0 auto; transform: translateY(-200px);
+    width: 100%; display: block; margin:0 auto;
 }
+/* .full .fullImg.ajou h3{
+    font-size: 30px;
+    
+}
+.full .fullImg.ajou img{
+    width: 100%; display: block; margin:100px auto;
+} */
 
 
 

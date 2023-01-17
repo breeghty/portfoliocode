@@ -169,15 +169,6 @@ $(function(){
     });
 });
 
-// //svg
-// //길이찾기
-// $(function() {
-//     $('.svgAni').find('path').each(function( i, path ) {  
-//     var length = path.getTotalLength();
-//     // alert(length);
-//     });
-// });
-
 
 // div. skill
 const iconList = document.querySelectorAll(".topList > li, .bottomList > li"); 
@@ -379,7 +370,7 @@ let scrollX = gsap.to(list,{
     trigger: ".container",
     pin: true,
     scrub: 1,
-    end: "+=1500",
+    end: "+=1800",
     }
 });
 
@@ -440,7 +431,6 @@ function setActive(link){
     }
 
 }
-
 
 
 

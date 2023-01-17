@@ -71,6 +71,14 @@ footer .contact .inner .center{
     position:absolute; left:40%; top: 40%; transform:translate(-50%, -50%);
     color:#fff;
 }
+
+/* animation */
+footer .contact .inner .center.motion h3 .char{
+    display: inline-block;
+    animation: slide-up 0.2s cubic-bezier(.5, 0, .5, 1) both;
+    animation-delay: calc(60ms * var(--char-index));
+}
+
 footer .contact .inner .center h3{
     font-size:60px; margin-bottom: 20px;
 }
@@ -78,11 +86,31 @@ footer .contact .inner .center p{
     font-size: 16px; font-weight: 200;
 }
 footer .contact .inner .center .path{
-    position:absolute; right:-60%; top:30%;
-    width: 300px; height:200px; transform: scale(1.2);
+    position:absolute; right:-60%; top:10%;
+    width: 300px; height:300px; 
 }
-footer .contact .inner .center .path .arrow path, footer .contact .inner .center .path .arrow line{
-    fill:none;  stroke: #fff; stroke-width: 1;
+footer .contact .inner .center .path svg{
+    width: 250px; height: 250px; margin: 0 auto;
+    transform: rotate(-60deg);
+    
+}
+footer .contact .inner .center.motion .path .arrow path{
+    fill:none;  stroke:#fff; stroke-width: 1;
+    stroke-dasharray: 400; stroke-dashoffset: 400;
+    animation-duration: 2s; animation-fill-mode: forwards;
+    animation-name: draw;
+}
+footer .contact .inner .center.center.motion .path svg path.tail-1{
+    animation-delay: 0.5s;
+}
+footer .contact .inner .center.motion .path svg path.tail-2{
+    animation-delay:0.7s;
+}
+
+@keyframes draw {
+    to{
+        stroke-dashoffset: 0;
+    }
 }
 footer .contact .inner .center .e_mail{
     position:absolute; right:-100%; top:5%;
