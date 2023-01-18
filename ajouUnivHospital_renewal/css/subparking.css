@@ -1,0 +1,292 @@
+@charset "utf-8";
+
+/* reset */
+* {margin: 0;padding: 0;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td{margin:0;padding:0;}
+h1, h2, h3, h4, h5, h6 {font-weight: 700; font-size: inherit;}
+a {color: inherit; text-decoration: inherit;}
+img {vertical-align: middle;}
+a img {border: none;}
+li {list-style: none;}
+address, em, i {font-style: normal;}
+a:focus {outline: none;}
+button:focus {outline: none;}
+
+/* Layout */
+body{font-family: 'KoPubWorldDotum';}
+.wrap{width: 100%; overflow:hidden; scroll-behavior: smooth;}
+
+
+
+/* Header */
+header{width: 100%; height: 150px; position:fixed; z-index:100;
+overflow:hidden;}
+/* HeaderTop */
+.topHeader{width: 100%;height: 85px; position:relative; 
+overflow: hidden; background: #fff;z-index:-3;}
+.topHeader:after{content:''; position:absolute; right:0; top:0; background: #9CCDD8; width: 110px; height: 85px;
+    z-index:-1;}
+
+.topHeader .innerTopHeader{width: 98%; margin:25px auto; display:flex;
+box-sizing: border-box;  transform:translateY(-27%);}
+.topHeader .innerTopHeader h1.logo{width: 220px; height: 60px; padding:10px; box-sizing: border-box;}
+.topHeader .innerTopHeader h1.logo a{display: block; width: 100%; height: 100%;}
+.topHeader .innerTopHeader h1.logo a img{display: block; width: 100%;}
+
+.topHeader .innerTopHeader nav{display: flex; width: 51%; justify-content: space-between;
+    transform: translateX(5%); margin: 0 25px;}
+.topHeader .innerTopHeader nav li{display:inline-block; width: 20%; padding: 20px 30px; box-sizing: border-box;
+    font-size: 23px; font-weight: bold; text-align: center;}
+.topHeader .innerTopHeader nav li a{display:block; width: 100%; height: 100%; transition:color 0.3s ease;}
+
+/* hover */
+.topHeader .innerTopHeader nav li:hover a, .topHeader .innerTopHeader nav li:focus a{color:#0f5fc2;}
+
+.topHeader .innerTopHeader  ul.Menu{width: 25%; display:flex; transform:translateX(17%);
+}
+.topHeader .innerTopHeader ul.Menu li{display:inline-block; padding: 25px 0; box-sizing: border-box;}
+.topHeader .innerTopHeader ul.Menu span{display:inline-block; padding: 27px 0; box-sizing: border-box;
+color:#000;}
+.topHeader .innerTopHeader ul.Menu li a{display:block; width: 100%; height: 100%;
+    padding:0 10px;box-sizing:border-box;font-size: 18px;}
+.topHeader .innerTopHeader ul.Menu li:last-child{width: 12%; height: 100%; margin-left:12px;
+    transform: translateY(-5%);}
+.topHeader .innerTopHeader  ul.Menu li:last-child a{display: block; width: 100%; height: 100%;}
+
+.topHeader .innerTopHeader .popBar{display:block;width:50px;height:50px;
+transform:translate(280%,20%); z-index:1;}
+.topHeader .innerTopHeader .popBar a{display:block; width: 100%; height: 100%;}
+.topHeader .innerTopHeader .popBar a i{font-size:33px; color:#fff;  box-sizing: border-box;
+transform: translate(-35%,35%);}
+
+/* HeaderBottom */
+.bottomHeader{width: 100%; height: 64px; background:  #E6E6E6; }
+.bottomHeader .innerBottomHeader{width: 75%; margin:auto; display:flex;
+box-sizing: border-box;}
+.bottomHeader .innerBottomHeader .leftMenu{width:55%;float:left; 
+padding:20px;box-sizing: border-box;}
+.bottomHeader .innerBottomHeader .leftMenu li{float:left; margin: 0 25px;
+font-size: 18px; position:relative;}
+
+.bottomHeader .innerBottomHeader .leftMenu li:nth-child(1)::after{content:''; position:absolute; background: #C4C4C4; width: 1px; height: 17px; 
+    right:-85%;  top:20%;}
+.bottomHeader .innerBottomHeader .leftMenu li:nth-child(2)::after{content:''; position:absolute; background: #C4C4C4; width: 1px; height: 17px; 
+right:-15%;  top:20%;}
+.bottomHeader .innerBottomHeader .leftMenu li:nth-child(3)::after{content:''; position:absolute; background: #C4C4C4; width: 1px; height: 17px; 
+    right:-15%;  top:20%;}
+
+.bottomHeader .innerBottomHeader .leftMenu li a{display:block; width: 100%; height: 100%;}
+.bottomHeader .innerBottomHeader .leftMenu li a img{display: block; width: 100%;}
+.bottomHeader .innerBottomHeader .leftMenu li a i{margin-left: 75px;}
+
+.bottomHeader .innerBottomHeader .colorMenu{float:right; margin-left: 310px;}
+.bottomHeader .innerBottomHeader .colorMenu li{float:left;}
+.bottomHeader .innerBottomHeader .colorMenu a{display:block; width: 100%; height: 100%;}
+.bottomHeader .innerBottomHeader .colorMenu a img{display: block; width: 100%;}
+
+/* section.visual */
+.visual{width: 100%; height: 500px; background:url(../img/parking_back.png)no-repeat center/cover;
+margin:149px 0 0; position:relatve;}
+.visual .inner{width: 1400px; position: absolute; left: 13%; top: 25%;}
+.visual .inner .title{width: 80%; margin:0 auto;}
+.visual .inner .title h1{font-size:40px; font-weight: bold; text-align: center; margin-bottom:100px;
+    }
+.visual .inner .title p {font-family: 'Nanum Gothic', sans-serif; font-size: 20px; text-align: center;
+    }
+.visual .inner .title p span{color:#326199;font-weight:bold;line-height:2.5;}
+
+/* visual.animation */
+@keyframes slideUp{
+    0%{opacity:0;}
+    40%{opacity:0; transform:translateY(40px);}
+}
+.visual .inner.motion h1{animation-name:slideUp; animation-duration: 0.6s;}
+.visual .inner.motion p{animation-name:slideUp; animation-duration: 1s;}
+
+/* section.location */
+.location{width: 100%; height: 910px; position:relative;
+overflow:hidden;}
+.location .flowTxt{width: 200%; height: 300px; position:absolute; top: 40%; left:0;
+    z-index:-1; overflow: hidden;}
+.location .flowTxt h1{transform:translateY(50%); text-align: center;}
+.location .flowTxt h1:nth-child(1){display:inline-block;font-size:115px; padding: 85px auto; color:#373737;
+box-sizing: border-box; width:48%;}
+.location .flowTxt h1:nth-child(2){display:inline-block; font-size:107px; padding: 85px auto; color:#373737; 
+    box-sizing: border-box; width:48%;}
+
+
+
+.location .inner{width: 1400px; margin:0 auto;}
+.location .inner h1{font-size: 35px; text-align: center; box-sizing: border-box;
+    padding: 80px 0 ;}
+.location .inner ul.topPark{width: 100%; margin:10px auto 70px; display:flex;
+ padding: 30px auto; justify-content: space-between; overflow:hidden;}
+.location .inner ul.topPark li{width: 400px; height:250px; position:relative;}
+.location .inner ul.topPark li:after{content:''; position:absolute;left:0; top:0; width: 400px; height: 250px; opacity:0; 
+background: rgba(0,0,0,0.75); transition: all 0.6s ease; cursor:pointer;}
+.location .inner ul.topPark li:hover, .location .inner ul.topPark li:focus{box-shadow: 5px 5px 10px rgba(0,0,0,0.75); transform:translateY(-5px);
+transition:all 0.6s ease;}
+.location .inner ul.topPark li:hover::after, .location .inner ul.topPark li:focus::after{opacity:1;}
+.location .inner ul.topPark li a{display: block; width: 100%; height: 100%;}
+.location .inner ul.topPark li a img{display: block; width: 100%; height: 100%;}
+.location .inner ul.topPark li a .topTxt{position:absolute; left:25%; top:20%;text-align:center; line-height: 50px; color:#fff; display: none;
+z-index:1;}
+.location .inner ul.topPark li a .topTxt h3{font-size: 25px;}
+.location .inner ul.topPark li a .topTxt p{font-size: 18px;font-family: 'Nanum Gothic', sans-serif;}
+.location .inner ul.topPark li:hover .topTxt, .location .inner ul.topPark li:focus.topTxt{display:block; transition: all 0.6s ease;}
+
+.location .inner ul.bottomPark{width: 100%; margin: 10px auto; display: flex;
+overflow:hidden;justify-content: space-between;}
+.location .inner ul.bottomPark li{width: 600px; height:250px; position:relative;}
+.location .inner ul.bottomPark li:after{content:''; position:absolute;left:0; top:0; width: 600px; height: 250px; opacity:0; 
+    background: rgba(0,0,0,0.75); transition: all 0.6s ease; cursor:pointer;}
+.location .inner ul.bottomPark li:hover, .location .inner ul.bottomPark li:focus{box-shadow: 5px 5px 10px rgba(0,0,0,0.3); transform:translateY(-5px);
+        transition:all 0.6s ease;}
+.location .inner ul.bottomPark li:hover::after, .location .inner ul.bottomPark li:focus::after{opacity:1;}
+.location .inner ul.bottomPark li a{display: block; width: 100%; height: 100%;}
+.location .inner ul.bottomPark li a img{display: block; width: 100%; height: 100%;}
+.location .inner ul.bottomPark li a .botTxt{position:absolute; left:30%; top:20%; text-align:center; line-height: 50px; color:#fff; display: none;
+    z-index:1;}
+.location .inner ul.bottomPark li:nth-child(2) a .botTxt{left:18%;}
+.location .inner ul.bottomPark li a .botTxt h3{font-size: 25px;}
+.location .inner ul.bottomPark li a .botTxt p{font-size: 18px;font-family: 'Nanum Gothic', sans-serif;}
+.location .inner ul.bottomPark li:hover .botTxt, .location .inner ul.bottomPark li:focus.botTxt{display:block; transition: all 0.6s ease;}
+
+/* animation-motion */
+@keyframes textFlow {
+    0% {left:0%;}
+    100% {left:-100%;}
+}
+
+
+.location.motion .flowTxt{animation:textFlow 17s linear infinite;}
+.location .inner.motion h1{animation-name:slideUp; animation-duration: 1.2s;}
+.location .inner.motion ul{animation-name:slideUp; animation-duration: 2s;}
+
+
+/* section.pictureOfloc */
+.pictureOfloc {width: 100%; height: 880px; background: #DDEFE3; overflow: hidden;}
+.pictureOfloc .inner{width: 1400px; overflow:hidden; margin: 50px auto;
+display:flex; justify-content: space-between; position:relative;}
+.pictureOfloc .inner img{display:block; width:60%; height: 730px;
+margin-top:50px;}
+
+.pictureOfloc .inner ul{width: 35%; height: 100%;
+margin-top:80px;}
+.pictureOfloc .inner ul li{width: 210px; height: 55px; background: #fff; border:1px solid #fff;
+border-radius: 30px; margin: 35px auto;}
+.pictureOfloc .inner ul li a{display: block; width: 100%; height: 100%;
+font-size:18px; font-weight:bold; color:#2A484E; text-align: center;
+box-sizing: border-box; padding: 14px 0;}
+
+/* hover */
+.pictureOfloc .inner ul li:hover, .pictureOfloc .inner ul li:focus {box-shadow: 2px 2px 5px rgba(0,0,0,0.2); transform:translateY(-2px);
+    transition:all 0.3s ease; background:#2A484E; border:1px solid #2A484E; width: 230px; height: 60px;}
+.pictureOfloc .inner ul li a:hover, .pictureOfloc .inner ul li a:focus {color:#fff; transition:all 0.3s ease; font-size:20px;}
+
+/* animation */
+.pictureOfloc .inner.motion {animation-name: slideUp; animation-duration: 0.6s;}
+
+/* section.usage */
+.usage{width: 100%; height:1380px; overflow:hidden; padding:70px 0;}
+.usage .inner{width: 1400px; margin:0 auto; overflow:hidden;}
+.usage .inner h1{font-size: 35px; text-align: center; box-sizing: border-box;
+    padding: 80px 0; }
+
+/* animation */
+.usage .inner.motion h1{animation-name:slideUp; animation-duration: 1.2s;}
+.usage .inner.motion .freeParking{animation-name:slideUp; animation-duration: 1.6s;}
+.usage .inner .costParking.motion{animation-name:slideUp; animation-duration: 1.2s;}
+
+/* table 공통 부분 */
+.usage .inner table{width:98%; margin:15px auto 10px; text-align: center;
+color:#3F3F3F; background: #fff; border:1px solid #999999; border-collapse: collapse;}
+.usage .inner table th{background:#9CCDD8;border:1px solid #999999; border-collapse: collapse; border-bottom:3px solid #2A484E;
+padding: 10px 0;font-size:18px; box-sizing: border-box;}
+.usage .inner table td{border:1px solid #999999; border-collapse: collapse;
+    padding: 10px 0;font-size:18px; box-sizing: border-box;}
+
+/* 무료주차 */
+.usage .inner .freeParking{width: 100%; margin-bottom:100px;}
+.usage .inner .freeParking span{display:block; float:left; font-size: 48px;
+    padding-left: 15px; box-sizing: border-box;}
+.usage .inner .freeParking h2{float:left; font-size: 25px; margin-top:14px;
+margin-left: 10px;}
+.usage .inner .freeParking p{display:inline-block;font-size: 16px; padding-left: 15px; box-sizing: border-box;}
+.usage .inner .freeParking .tit{margin-top:22px;}
+/* 유료주차 */
+.usage .inner .costParking{width: 100%;}
+.usage .inner .costParking span{display:block; float:left; font-size: 48px;
+    padding-left: 15px; box-sizing: border-box;
+}
+.usage .inner .costParking h2{display:inline-block; font-size: 25px; margin-top:14px;
+    margin-left: 10px;}
+.usage .inner .costParking p{display: inline-block; font-size: 16px; 
+padding-left: 15px; box-sizing: border-box;}
+
+.usage a.goTop{display: block; width: 60px;height: 60px; position:fixed; bottom:10%; right:8%; z-index:100;}
+.usage a.goTop img{display:block; width: 100%; height: 100%;}
+
+.usage.motion a.goTop{animation-name:slideUp; animation-duration: 0.5s; opacity:1;}
+
+
+/* section.useInfo */
+.useInfo{width: 100%; height: 600px; overflow:hidden; background: rgba(221, 239, 227, 0.5);
+position:relative;}
+.useInfo .inner{width: 1400px; margin:0 auto; overflow:hidden;}
+.useInfo .inner ul{margin:130px 0; color:#3F3F3F;}
+.useInfo .inner .lnr{display:block; font-size:85px; text-align: center;
+}
+.useInfo .inner ul h2{font-size: 25px; padding: 20px 0 25px; text-align: center;}
+.useInfo .inner ul li{font-size:20px; line-height: 1.8;}
+.useInfo .inner ul li span{display:inline-block; font-weight: bold; padding-right: 5px;}
+
+.useInfo .inner .phone{float:left; margin-left: 250px;}
+
+
+.useInfo .inner .people{float:right; margin-right: 250px;}
+
+/* animation */
+.useInfo .inner.motion ul{animation-name: slideUp; animation-duration:1.2s;}
+
+
+/* footer */
+footer{width: 100%; background: #22263B; font-family: 'Nanum Gothic', sans-serif;}
+footer .inner{width:1640px; margin:0 auto; overflow:hidden;}
+footer .inner .footerTop{width: 100%; border-bottom: 1px solid #707070;
+color:#fff;box-sizing: border-box; padding: 50px;  font-size: 14px;}
+footer .inner .footerTop .util{float:left;}
+footer .inner .footerTop .util li{float:left; margin-right: 20px; box-sizing: border-box;}
+footer .inner .footerTop .util li:nth-child(2), footer .inner .footerTop .util li:last-child {color:#4FE52B;}
+footer .inner .footerTop .util li a{display: block; width: 100%; height: 100%;}
+
+footer .inner .footerTop .icon{float:right; transform: translateY(-20%); margin-right:30px;}
+footer .inner .footerTop .icon li{float:left; margin-right: 20px;
+    width: 40px; height: 40px;}
+footer .inner .footerTop .icon li:nth-child(2){width: 35px; height: 35px; margin-top:2px;}
+footer .inner .footerTop .icon li:nth-child(6){width: 35px; height: 35px; margin-top:2px;}
+
+footer .inner .footerTop .icon li.last{width: 150px; box-sizing: border-box; border: 1px solid #fff;}
+footer .inner .footerTop .icon li a{display: block; width: 100%; height: 100%;}
+footer .inner .footerTop .icon li.last a{text-align:center; padding-top: 10px; box-sizing: border-box;}
+footer .inner .footerTop .icon li a img{display: block; width: 100%; height: 100%;}
+footer .inner .footerTop .icon li:nth-child(2) a img{border-radius: 8px;}
+footer .inner .footerTop .icon li.last a i{padding-left: 5px;}
+
+
+
+footer .inner .footerBottom{width: 100%; padding: 30px 50px;
+    font-size: 12px;overflow:hidden; }
+footer .inner .footerBottom .address{float:left; color:#D1BBBB; width: 40%;}
+footer .inner .footerBottom .address li:nth-child(1){margin-bottom: 8px;}
+footer .inner .footerBottom .address li:last-child{color: #776969; margin-top: 30px;}
+
+footer .inner .footerBottom .list{float:right; width: 40%; margin-right:30px;  padding: 20px;
+box-sizing: border-box;  overflow:hidden; transform:translate(-30%, -20%);}
+footer .inner .footerBottom .list li{float:left; width: 15%;  margin-right: 10px;}
+footer .inner .footerBottom .list li.logo{width: 60px; height: 60px;}
+footer .inner .footerBottom .list li.parag{color: #776969; line-height: 1.8; transform:translateY(20%);
+margin-left: 15px;}
+footer .inner .footerBottom .list li:last-child{margin-right:0;}
+footer .inner .footerBottom .list li a{display: block; width: 100%; height: 100%;}
+footer .inner .footerBottom .list li.logo a img{width: 100%; height: 100%;}
